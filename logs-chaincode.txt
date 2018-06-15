@@ -1,0 +1,1103 @@
+
+ERR - 18:58:41.649 [rest] Register -> INFO 4edc[0m REST client login...
+ERR - 18:58:41.650 [rest] Register -> INFO 4edd[0m Local data store for client loginToken: /var/hyperledger/production/client/
+ERR - 18:58:41.650 [rest] Register -> INFO 4ede[0m User 'dashboarduser_type1_972d0ec434' is already logged in.
+
+ERR - 18:58:45.166 [rest] ProcessChaincode -> INFO 4edf[0m REST processing chaincode request...
+
+ERR - 18:58:45.166 [rest] processChaincodeDeploy -> INFO 4ee0[0m REST deploying chaincode...
+ERR - 18:58:45.167 [rest] processChaincodeDeploy -> INFO 4ee1[0m Local user 'dashboarduser_type1_972d0ec434' is already logged in. Retrieving login token.
+
+ERR - [36m18:58:45.167 [devops] getChaincodeBytes -> DEBU 4ee2[0m Received build request for chaincode spec: type:GOLANG chaincodeID:<path:"https://github.com/ibm-blockchain/marbles-chaincode/hyperledger/part2" > ctorMsg:<function:"init" args:"12345" > secureContext:"dashboarduser_type1_972d0ec434"
+
+ERR - [36m18:58:45.167 [golang/hash] getCodeFromHTTP -> DEBU 4ee3[0m getCodeFromHTTP github.com/ibm-blockchain/marbles-chaincode/hyperledger/part2
+ERR - [36m18:58:45.167 [golang/hash] getCodeFromHTTP -> DEBU 4ee4[0m go get github.com/ibm-blockchain/marbles-chaincode/hyperledger/part2
+
+ERR - [36m18:58:48.171 [golang/hash] hashFilesInDir -> DEBU 4ee8[0m hashFiles /go/_usercode_/304767788/src/github.com/ibm-blockchain/marbles-chaincode/hyperledger/part2
+
+ERR - 18:58:48.179 [container] WriteGopathSrc -> INFO 4ee9[0m rootDirectory = /go/src
+
+ERR - [36m18:58:49.482 [devops] Deploy -> DEBU 4eea[0m Initializing secure devops using context dashboarduser_type1_972d0ec434
+
+ERR - 18:58:49.482 [crypto] Deploy -> INFO 4eeb[0m Initializing client [dashboarduser_type1_972d0ec434]...
+
+ERR - [36m18:58:49.483 [crypto] initConfiguration -> DEBU 4eec[0m [client.dashboarduser_type1_972d0ec434] Data will be stored at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434]
+
+ERR - [36m18:58:49.483 [crypto] init -> DEBU 4eed[0m [client.dashboarduser_type1_972d0ec434]  Init keystore...
+
+ERR - [36m18:58:49.483 [crypto] createKeyStoreIfNotExists -> DEBU 4eee[0m [client.dashboarduser_type1_972d0ec434] Keystore path [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks] missing [false]: [<clean>]
+ERR - [36m18:58:49.483 [crypto] createKeyStoreIfNotExists -> DEBU 4eef[0m [client.dashboarduser_type1_972d0ec434] Keystore [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/db] missing [false]:[<clean>]
+
+ERR - [36m18:58:49.483 [crypto] openKeyStore -> DEBU 4ef0[0m [client.dashboarduser_type1_972d0ec434] Keystore opened at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks]...done
+
+ERR - [36m18:58:49.483 [crypto] init -> DEBU 4ef1[0m [client.dashboarduser_type1_972d0ec434]  Init keystore...done.
+
+ERR - [36m18:58:49.483 [crypto] initCryptoEngine -> DEBU 4ef2[0m [client.dashboarduser_type1_972d0ec434]  Initializing node crypto engine...
+
+ERR - [36m18:58:49.483 [crypto] loadECACertsChain -> DEBU 4ef3[0m [client.dashboarduser_type1_972d0ec434]  Loading ECA certificates chain...
+ERR - [36m18:58:49.483 [crypto] loadCert -> DEBU 4ef4[0m [client.dashboarduser_type1_972d0ec434] Loading certificate [eca.cert.chain] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/eca.cert.chain]...
+ERR - [36m18:58:49.483 [crypto] loadTCACertsChain -> DEBU 4ef5[0m [client.dashboarduser_type1_972d0ec434]  Loading TCA certificates chain...
+ERR - [36m18:58:49.483 [crypto] loadCert -> DEBU 4ef6[0m [client.dashboarduser_type1_972d0ec434] Loading certificate [tca.cert.chain] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/tca.cert.chain]...
+ERR - [36m18:58:49.483 [crypto] loadEnrollmentKey -> DEBU 4ef7[0m [client.dashboarduser_type1_972d0ec434]  Loading enrollment key...
+ERR - [36m18:58:49.483 [crypto] loadPrivateKey -> DEBU 4ef8[0m [client.dashboarduser_type1_972d0ec434] Loading private key [enrollment.key] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/enrollment.key]...
+ERR - [36m18:58:49.484 [crypto] loadEnrollmentCertificate -> DEBU 4ef9[0m [client.dashboarduser_type1_972d0ec434]  Loading enrollment certificate...
+ERR - [36m18:58:49.484 [crypto] loadCertX509AndDer -> DEBU 4efa[0m [client.dashboarduser_type1_972d0ec434] Loading certificate [enrollment.cert] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/enrollment.cert]...
+ERR - [36m18:58:49.484 [crypto] loadEnrollmentCertificate -> DEBU 4efb[0m [client.dashboarduser_type1_972d0ec434] Setting id to [46 c6 2a cc cf be ac 49 52 54 ce a8 d1 a2 ef cd 3e 82 3f 22 c8 9d 47 3a 67 5d 23 89 27 5f 3b c5].
+ERR - [36m18:58:49.484 [crypto] loadEnrollmentCertificate -> DEBU 4efc[0m [client.dashboarduser_type1_972d0ec434] Setting enrollCertHash to [46 c6 2a cc cf be ac 49 52 54 ce a8 d1 a2 ef cd 3e 82 3f 22 c8 9d 47 3a 67 5d 23 89 27 5f 3b c5].
+ERR - [36m18:58:49.484 [crypto] loadEnrollmentID -> DEBU 4efd[0m [client.dashboarduser_type1_972d0ec434] Loading enrollment id at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/enrollment.id]...
+ERR - [36m18:58:49.484 [crypto] loadEnrollmentID -> DEBU 4efe[0m [client.dashboarduser_type1_972d0ec434] Setting enrollment id to [dashboarduser_type1_972d0ec434].
+ERR - [36m18:58:49.484 [crypto] loadEnrollmentChainKey -> DEBU 4eff[0m [client.dashboarduser_type1_972d0ec434]  Loading enrollment chain key...
+ERR - [36m18:58:49.484 [crypto] loadPublicKey -> DEBU 4f00[0m [client.dashboarduser_type1_972d0ec434] Loading public key [chain.key] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/chain.key]...
+ERR - [36m18:58:49.484 [crypto] loadTLSCACertsChain -> DEBU 4f01[0m [client.dashboarduser_type1_972d0ec434]  Loading TLSCA certificates chain...
+ERR - [36m18:58:49.484 [crypto] loadExternalCert -> DEBU 4f02[0m [client.dashboarduser_type1_972d0ec434] Loading external certificate at [/certs/blockchain-cert.pem]...
+ERR - [36m18:58:49.484 [crypto] loadTLSCACertsChain -> DEBU 4f03[0m [client.dashboarduser_type1_972d0ec434]  Loading TLSCA certificates chain...done
+ERR - [36m18:58:49.484 [crypto] loadTLSCertificate -> DEBU 4f04[0m [client.dashboarduser_type1_972d0ec434]  Loading tls certificate...
+ERR - [36m18:58:49.484 [crypto] loadCertX509AndDer -> DEBU 4f05[0m [client.dashboarduser_type1_972d0ec434] Loading certificate [tls.cert] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/tls.cert]...
+
+ERR - [36m18:58:49.484 [crypto] initCryptoEngine -> DEBU 4f06[0m [client.dashboarduser_type1_972d0ec434]  Initializing node crypto engine...done!
+
+ERR - [36m18:58:49.485 [crypto] init -> DEBU 4f07[0m [client.dashboarduser_type1_972d0ec434]  Initialization...done.
+
+ERR - [36m18:58:49.485 [crypto] init -> DEBU 4f08[0m [client.dashboarduser_type1_972d0ec434]  Init keystore...
+
+ERR - [36m18:58:49.485 [crypto] initKeyStore -> DEBU 4f09[0m [client.dashboarduser_type1_972d0ec434] Create Table if not exists [TCert] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks].
+ERR - [36m18:58:49.487 [crypto] initKeyStore -> DEBU 4f0a[0m [client.dashboarduser_type1_972d0ec434] Create Table if not exists [UsedTCert] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks].
+
+ERR - [36m18:58:49.488 [crypto] init -> DEBU 4f0b[0m [client.dashboarduser_type1_972d0ec434]  Init keystore...done.
+
+ERR - [36m18:58:49.488 [crypto] loadTCertOwnerKDFKey -> DEBU 4f0c[0m [client.dashboarduser_type1_972d0ec434]  Loading TCertOwnerKDFKey...
+ERR - [36m18:58:49.488 [crypto] loadTCertOwnerKDFKey -> DEBU 4f0d[0m [client.dashboarduser_type1_972d0ec434]  Failed loading TCertOwnerKDFKey. Key is missing.
+
+ERR - [36m18:58:49.488 [crypto] initTCertEngine -> DEBU 4f0e[0m [client.dashboarduser_type1_972d0ec434] Using multithreading [false]
+ERR - [36m18:58:49.488 [crypto] initTCertEngine -> DEBU 4f0f[0m [client.dashboarduser_type1_972d0ec434] TCert batch size [200]
+
+ERR - [36m18:58:49.489 [crypto] init -> DEBU 4f10[0m [client.dashboarduser_type1_972d0ec434]  Init TCert Pool...
+
+ERR - [36m18:58:49.489 [crypto] Start -> DEBU 4f11[0m [client.dashboarduser_type1_972d0ec434]  Starting TCert Pool...
+
+ERR - [36m18:58:49.489 [crypto] loadKey -> DEBU 4f12[0m [client.dashboarduser_type1_972d0ec434] Loading key [query.key] at [/var/hyperledger/production/crypto/client/dashboarduser_type1_972d0ec434/ks/raw/query.key]...
+
+ERR - 18:58:49.490 [crypto] Deploy -> INFO 4f13[0m Initializing client [dashboarduser_type1_972d0ec434]...done!
+
+ERR - [36m18:58:49.490 [devops] Deploy -> DEBU 4f14[0m Creating secure transaction d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+
+ERR - [36m18:58:49.490 [crypto] getTCertsFromTCA -> DEBU 4f15[0m [client.dashboarduser_type1_972d0ec434] Get [200] certificates from the TCA...
+
+ERR - [36m18:58:49.490 [crypto] getTCAClient -> DEBU 4f16[0m [client.dashboarduser_type1_972d0ec434]  Getting TCA client...
+
+ERR - [36m18:58:49.490 [crypto] getClientConn -> DEBU 4f17[0m [client.dashboarduser_type1_972d0ec434] Dial to addr:[a5c090fe-550a-4904-8979-c71505efc6c6_ca.us.blockchain.ibm.com:30303], with serverName:[a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com]...
+ERR - [36m18:58:49.490 [crypto] getClientConn -> DEBU 4f18[0m [client.dashboarduser_type1_972d0ec434]  TLS enabled...
+
+ERR - [36m18:58:49.490 [crypto] getTCAClient -> DEBU 4f19[0m [client.dashboarduser_type1_972d0ec434]  Getting TCA client...done
+
+ERR - [36m18:58:49.629 [crypto] getTCertsFromTCA -> DEBU 4f1a[0m [client.dashboarduser_type1_972d0ec434] TCertIndex: [31 00 fe 55 f2 2a 90 ea 55 00 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff].
+ERR - [36m18:58:49.630 [crypto] getTCertsFromTCA -> DEBU 4f1b[0m [client.dashboarduser_type1_972d0ec434] Sub index [0]
+ERR - [36m18:58:49.630 [crypto] getTCertsFromTCA -> DEBU 4f1c[0m [client.dashboarduser_type1_972d0ec434] Certificate [0] validated.
+ERR - [36m18:58:49.630 [crypto] AddTCert -> DEBU 4f1d[0m [client.dashboarduser_type1_972d0ec434] Adding new Cert [30 82 02 58 30 82 01 fe a0 03 02 01 02 02 10 71 91 57 90 eb 21 4c bd 86 d2 2f 08 30 5d d7 c3 30 0a 06 08 2a 86 48 ce 3d 04 03 03 30 29 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 0c 30 0a 06 03 55 04 03 13 03 74 63 61 30 1e 17 0d 31 36 30 38 31 32 31 38 35 37 35 30 5a 17 0d 31 36 31 31 31 30 31 38 35 37 35 30 5a 30 44 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 27 30 25 06 03 55 04 03 0c 1e 64 61 73 68 62 6f 61 72 64 75 73 65 72 5f 74 79 70 65 31 5f 39 37 32 64 30 65 63 34 33 34 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 4a 52 7d 1b e7 53 61 0d 83 9c f8 39 6d 09 d3 e3 da 74 92 63 01 53 41 dd 23 d0 53 6e 82 a8 4a be 03 6a 68 b0 ce 78 3f bc a8 15 94 e2 eb 43 f1 67 2e 64 ae a0 ca 7a 94 56 33 c7 ac 23 ec 7b 1c 48 a3 81 ec 30 81 e9 30 0e 06 03 55 1d 0f 01 01 ff 04 04 03 02 07 80 30 0c 06 03 55 1d 13 01 01 ff 04 02 30 00 30 0d 06 03 55 1d 0e 04 06 04 04 01 02 03 04 30 0f 06 03 55 1d 23 04 08 30 06 80 04 01 02 03 04 30 4d 06 06 2a 03 04 05 06 07 01 01 ff 04 40 65 df a8 d8 2c 0c 66 c3 81 0b d6 08 2a 68 66 f1 50 4c dd 12 78 e7 62 b0 be 16 5e 0f ee ac 70 9a a9 19 8e a3 5e 13 93 b3 03 a8 26 3c db 49 3c b6 c9 7e df c8 e5 a3 52 38 6f 5d 31 e8 78 45 37 2b 30 5a 06 06 2a 03 04 05 06 08 04 50 4a 92 72 f1 85 3c 83 ac 4f 19 3b 08 30 d0 79 76 5c 82 56 eb 9b 1a 99 d7 a4 e7 f7 3b a8 8e fc cf 03 81 2a c0 1c 36 91 37 cd 7f 3b 3d 6e f7 33 e7 a6 01 a0 12 d1 4e 5c b9 00 b9 17 a8 d9 67 7f e4 04 20 ce 65 d1 36 f5 15 3f 40 61 30 59 71 15 f7 30 0a 06 08 2a 86 48 ce 3d 04 03 03 03 48 00 30 45 02 20 47 ef 5d 03 16 04 3c 8b 30 1a fc 5e 20 a9 c7 c1 40 45 57 24 22 74 d3 ec ab 43 9f 4d 13 b3 32 8d 02 21 00 a2 8d a8 ac e9 f5 18 bf 26 93 3c fa 48 50 1a 04 2f bf 48 3d 86 52 b9 4d df b4 96 23 5d 52 a5 a4].
+
+ERR - [36m18:58:49.630 [crypto] getTCertsFromTCA -> DEBU 4f1e[0m [client.dashboarduser_type1_972d0ec434] TCertIndex: [33 00 fe 55 f2 2a 90 ea 55 00 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff].
+ERR - [36m18:58:49.630 [crypto] getTCertsFromTCA -> DEBU 4f1f[0m [client.dashboarduser_type1_972d0ec434] Sub index [1]
+ERR - [36m18:58:49.630 [crypto] getTCertsFromTCA -> DEBU 4f20[0m [client.dashboarduser_type1_972d0ec434] Certificate [1] validated.
+ERR - [36m18:58:49.630 [crypto] AddTCert -> DEBU 4f21[0m [client.dashboarduser_type1_972d0ec434] Adding new Cert [30 82 02 59 30 82 01 fe a0 03 02 01 02 02 10 64 fb b8 0f b8 1d 49 1a 80 e5 3c 54 9d 1e 6e 4b 30 0a 06 08 2a 86 48 ce 3d 04 03 03 30 29 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 0c 30 0a 06 03 55 04 03 13 03 74 63 61 30 1e 17 0d 31 36 30 38 31 32 31 38 35 37 35 30 5a 17 0d 31 36 31 31 31 30 31 38 35 37 35 30 5a 30 44 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 27 30 25 06 03 55 04 03 0c 1e 64 61 73 68 62 6f 61 72 64 75 73 65 72 5f 74 79 70 65 31 5f 39 37 32 64 30 65 63 34 33 34 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 1d 83 b3 11 67 49 cd a7 35 03 63 2f 15 ea de b1 7e 63 30 48 51 6e 4a ad 93 10 ed b0 2a cd 7c 3f 65 58 5a ab e3 4e 6d 98 1b a9 61 f9 ca b4 1e be 51 59 0b 15 99 b3 74 e7 ae 7d 4d 32 36 a6 37 62 a3 81 ec 30 81 e9 30 0e 06 03 55 1d 0f 01 01 ff 04 04 03 02 07 80 30 0c 06 03 55 1d 13 01 01 ff 04 02 30 00 30 0d 06 03 55 1d 0e 04 06 04 04 01 02 03 04 30 0f 06 03 55 1d 23 04 08 30 06 80 04 01 02 03 04 30 4d 06 06 2a 03 04 05 06 07 01 01 ff 04 40 72 5a 40 7a 40 89 f4 72 71 ff de b2 72 56 36 c9 f0 87 e9 a6 de 43 c9 fe 2e ea 71 95 5d a5 46 4e a9 64 a9 df d6 25 28 a3 26 90 27 61 2d 23 3f 5b c4 1d 43 25 24 af 9f 83 3b d9 94 a2 29 1c 61 d3 30 5a 06 06 2a 03 04 05 06 08 04 50 b8 f7 12 d5 f8 be 23 5c c1 ec d0 0a c4 1e c7 dc 98 01 55 8e 7e 73 ba 26 fd 9e 64 ac d2 a2 d3 b7 03 f6 ba 65 63 ef 3d d3 a5 45 11 d3 80 25 a3 f8 3d 8f ca ec 8a 42 9e e7 fe 9e 40 81 5b 48 d9 3f 74 7e 9d f4 18 16 46 fd db 5f 90 0e f6 72 5d 78 30 0a 06 08 2a 86 48 ce 3d 04 03 03 03 49 00 30 46 02 21 00 ab 96 76 4e 60 e2 d9 01 89 18 6b 06 6e df 0a b8 02 a1 0c d3 93 fc b0 bc c3 ab 1f 6e 17 d2 76 20 02 21 00 c9 6b 68 b9 c5 e1 0c ab ec 81 8b 75 ae 72 13 ef 77 16 4c 27 3c 27 92 19 4f 92 62 42 8f d1 bf cc].
+
+ERR - [36m18:58:49.718 [crypto] getTCertsFromTCA -> DEBU 5236[0m [client.dashboarduser_type1_972d0ec434] TCertIndex: [33 39 39 00 fe 55 f2 2a 90 ea 55 00 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff].
+ERR - [36m18:58:49.718 [crypto] getTCertsFromTCA -> DEBU 5237[0m [client.dashboarduser_type1_972d0ec434] Sub index [199]
+ERR - [36m18:58:49.718 [crypto] getTCertsFromTCA -> DEBU 5238[0m [client.dashboarduser_type1_972d0ec434] Certificate [199] validated.
+ERR - [36m18:58:49.718 [crypto] AddTCert -> DEBU 5239[0m [client.dashboarduser_type1_972d0ec434] Adding new Cert [30 82 02 59 30 82 01 fe a0 03 02 01 02 02 10 5c e9 9d e3 7a b1 40 e3 96 ba 51 4b 08 71 15 1d 30 0a 06 08 2a 86 48 ce 3d 04 03 03 30 29 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 0c 30 0a 06 03 55 04 03 13 03 74 63 61 30 1e 17 0d 31 36 30 38 31 32 31 38 35 37 35 30 5a 17 0d 31 36 31 31 31 30 31 38 35 37 35 30 5a 30 44 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 27 30 25 06 03 55 04 03 0c 1e 64 61 73 68 62 6f 61 72 64 75 73 65 72 5f 74 79 70 65 31 5f 39 37 32 64 30 65 63 34 33 34 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 13 f3 76 41 fd 59 5e 0d 71 bd 96 63 3d 87 6e 16 90 4b 78 10 67 79 83 f3 29 87 c6 13 5c 19 f0 23 a1 28 50 51 a7 05 b1 84 fc 50 d2 7f ac 54 35 89 98 56 4b 0b fd ee 29 a4 65 09 70 5f cd 7d 0f ac a3 81 ec 30 81 e9 30 0e 06 03 55 1d 0f 01 01 ff 04 04 03 02 07 80 30 0c 06 03 55 1d 13 01 01 ff 04 02 30 00 30 0d 06 03 55 1d 0e 04 06 04 04 01 02 03 04 30 0f 06 03 55 1d 23 04 08 30 06 80 04 01 02 03 04 30 4d 06 06 2a 03 04 05 06 07 01 01 ff 04 40 33 35 5e 1f 84 44 e4 46 b1 8e 34 a1 9e 2d 00 26 62 60 3e 7e 95 61 2c f9 06 6c 67 77 f2 f0 9a 6b 69 6a b0 2c 7c 33 72 44 06 7a cd 73 cc 67 76 2f dc 24 39 62 e9 5d b3 ae 80 52 c6 9c c5 7f 4d 6d 30 5a 06 06 2a 03 04 05 06 08 04 50 41 8a dd a4 ab f3 82 61 4f 82 b9 57 0c 65 4a 14 61 a1 92 9b 2f 2b c0 92 40 99 d9 aa 28 66 34 1e 89 4b 7a 13 40 e3 c1 c7 a9 6a 6e f7 50 87 00 4b 76 97 37 55 0a 1f 61 45 79 73 fb 5b 90 1d 9c 6d 9d f1 83 17 b4 fc 43 22 97 72 82 b3 07 17 ff d4 30 0a 06 08 2a 86 48 ce 3d 04 03 03 03 49 00 30 46 02 21 00 fe e0 d2 ba 95 03 c2 fb 1f 13 4c 47 d2 09 13 1c 10 cb 04 36 71 f8 b5 f6 17 52 1e 59 85 58 b1 21 02 21 00 c7 41 09 4d fc e5 64 35 2a 14 c9 55 f2 57 35 81 ac a4 90 c6 84 06 0e 67 23 3c 92 5a 01 bc a4 77].
+
+ERR - [36m18:58:49.731 [crypto] newChaincodeDeployUsingTCert -> DEBU 523a[0m [client.dashboarduser_type1_972d0ec434] Appending certificate [30 82 02 59 30 82 01 fe a0 03 02 01 02 02 10 5c e9 9d e3 7a b1 40 e3 96 ba 51 4b 08 71 15 1d 30 0a 06 08 2a 86 48 ce 3d 04 03 03 30 29 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 0c 30 0a 06 03 55 04 03 13 03 74 63 61 30 1e 17 0d 31 36 30 38 31 32 31 38 35 37 35 30 5a 17 0d 31 36 31 31 31 30 31 38 35 37 35 30 5a 30 44 31 0b 30 09 06 03 55 04 06 13 02 55 53 31 0c 30 0a 06 03 55 04 0a 13 03 49 42 4d 31 27 30 25 06 03 55 04 03 0c 1e 64 61 73 68 62 6f 61 72 64 75 73 65 72 5f 74 79 70 65 31 5f 39 37 32 64 30 65 63 34 33 34 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 13 f3 76 41 fd 59 5e 0d 71 bd 96 63 3d 87 6e 16 90 4b 78 10 67 79 83 f3 29 87 c6 13 5c 19 f0 23 a1 28 50 51 a7 05 b1 84 fc 50 d2 7f ac 54 35 89 98 56 4b 0b fd ee 29 a4 65 09 70 5f cd 7d 0f ac a3 81 ec 30 81 e9 30 0e 06 03 55 1d 0f 01 01 ff 04 04 03 02 07 80 30 0c 06 03 55 1d 13 01 01 ff 04 02 30 00 30 0d 06 03 55 1d 0e 04 06 04 04 01 02 03 04 30 0f 06 03 55 1d 23 04 08 30 06 80 04 01 02 03 04 30 4d 06 06 2a 03 04 05 06 07 01 01 ff 04 40 33 35 5e 1f 84 44 e4 46 b1 8e 34 a1 9e 2d 00 26 62 60 3e 7e 95 61 2c f9 06 6c 67 77 f2 f0 9a 6b 69 6a b0 2c 7c 33 72 44 06 7a cd 73 cc 67 76 2f dc 24 39 62 e9 5d b3 ae 80 52 c6 9c c5 7f 4d 6d 30 5a 06 06 2a 03 04 05 06 08 04 50 41 8a dd a4 ab f3 82 61 4f 82 b9 57 0c 65 4a 14 61 a1 92 9b 2f 2b c0 92 40 99 d9 aa 28 66 34 1e 89 4b 7a 13 40 e3 c1 c7 a9 6a 6e f7 50 87 00 4b 76 97 37 55 0a 1f 61 45 79 73 fb 5b 90 1d 9c 6d 9d f1 83 17 b4 fc 43 22 97 72 82 b3 07 17 ff d4 30 0a 06 08 2a 86 48 ce 3d 04 03 03 03 49 00 30 46 02 21 00 fe e0 d2 ba 95 03 c2 fb 1f 13 4c 47 d2 09 13 1c 10 cb 04 36 71 f8 b5 f6 17 52 1e 59 85 58 b1 21 02 21 00 c7 41 09 4d fc e5 64 35 2a 14 c9 55 f2 57 35 81 ac a4 90 c6 84 06 0e 67 23 3c 92 5a 01 bc a4 77].
+ERR - [36m18:58:49.758 [crypto] newChaincodeDeployUsingTCert -> DEBU 523b[0m [client.dashboarduser_type1_972d0ec434] Appending signature: [30 45 02 21 00 94 08 5f 84 98 6c f8 18 b4 aa 4a 25 34 a8 ef 9c e1 65 73 c9 72 0d a6 e1 77 f1 36 e9 8c 10 0d 8a 02 20 3b 5a 30 31 2f 78 d3 1c 08 ec 0a b1 ad ad 85 c5 9c a7 d1 41 c7 7a 75 2e 4e 9a ed d4 04 f8 0a b7]
+ERR - [36m18:58:49.759 [devops] Deploy -> DEBU 523c[0m Sending deploy transaction (d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de) to validator
+ERR - [36m18:58:49.759 [peer] sendTransactionsToLocalEngine -> DEBU 523d[0m Marshalling transaction CHAINCODE_DEPLOY to send to local engine
+ERR - [36m18:58:49.769 [peer] sendTransactionsToLocalEngine -> DEBU 523e[0m Sending message CHAIN_TRANSACTION with timestamp seconds:1471028329 nanos:769353712  to local engine
+ERR - 18:58:49.769 [crypto] CloseClient -> INFO 523f[0m Closing client [dashboarduser_type1_972d0ec434]...
+ERR - [36m18:58:49.769 [crypto] storeUnusedTCerts -> DEBU 5240[0m [client.dashboarduser_type1_972d0ec434]  Storing unused TCerts...
+ERR - [36m18:58:49.769 [consensus/obcpbft] ProcessEvent -> DEBU 5241[0m Replica 0 batch main thread looping
+ERR - [36m18:58:49.782 [peer] SendMessage -> DEBU 5242[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:49.785 [peer] SendMessage -> DEBU 5243[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:49.801 [crypto] storeUnusedTCerts -> DEBU 5245[0m [client.dashboarduser_type1_972d0ec434]  Storing unused TCerts...done!
+ERR - [36m18:58:49.801 [crypto] Stop -> DEBU 5246[0m [client.dashboarduser_type1_972d0ec434]  Store unused TCerts...done!
+ERR - [36m18:58:49.801 [crypto] close -> DEBU 5247[0m [client.dashboarduser_type1_972d0ec434]  Closing keystore...
+ERR - [36m18:58:49.806 [crypto] close -> DEBU 5248[0m [client.dashboarduser_type1_972d0ec434]  Closing keystore...done!
+ERR - [36m18:58:49.806 [crypto] CloseClient -> DEBU 5249[0m Closing client [dashboarduser_type1_972d0ec434]...cleanup! [<clean>].
+ERR - 18:58:49.806 [rest] processChaincodeDeploy -> INFO 524a[0m Successfully deployed chainCode: d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - 18:58:49.806 [rest] ProcessChaincode -> INFO 524b[0m REST successfully deploy chaincode: {"jsonrpc":"2.0","result":{"status":"OK","message":"d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de"},"id":1}
+ERR - [36m18:58:49.798 [peer] SendMessage -> DEBU 5244[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:49.838 [consensus/obcpbft] logAddTxFromRequest -> DEBU 524c[0m Replica 0 adding request from 0 with transaction d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de into outstandingReqs
+ERR - [36m18:58:49.866 [consensus/obcpbft] softStartTimer -> DEBU 524d[0m Replica 0 soft starting new view timer for 4s: Batch outstanding requests
+ERR - [36m18:58:49.866 [consensus/obcpbft/events] loop -> DEBU 524e[0m Starting timer
+ERR - [36m18:58:49.883 [consensus/obcpbft] leaderProcReq -> DEBU 524f[0m Batch primary 0 queueing new request qT1aEc7olQRlF3GMH4VH9HSsPn5kFT2D/XxbU0Dr5hUmME7rzYYdzTXBSHrqwFl+6eUxbaE84SylH9CqfgfR6g==
+ERR - [36m18:58:49.901 [consensus/obcpbft] startBatchTimer -> DEBU 5250[0m Replica 0 started the batch timer
+ERR - [36m18:58:49.901 [consensus/obcpbft/events] loop -> DEBU 5251[0m Starting timer
+ERR - [36m18:58:50.901 [consensus/obcpbft/events] loop -> DEBU 5252[0m Event timer fired
+ERR - [36m18:58:50.901 [consensus/obcpbft/events] loop -> DEBU 5253[0m Timer event delivered
+ERR - [36m18:58:50.901 [consensus/obcpbft] ProcessEvent -> DEBU 5254[0m Replica 0 batch main thread looping
+ERR - 18:58:50.901 [consensus/obcpbft] ProcessEvent -> INFO 5255[0m Replica 0 batch timer expired
+ERR - [36m18:58:50.901 [consensus/obcpbft] stopBatchTimer -> DEBU 5256[0m Replica 0 stopped the batch timer
+ERR - [36m18:58:50.901 [consensus/obcpbft/events] loop -> DEBU 5257[0m Attempting to stop an unfired idle timer
+ERR - [36m18:58:50.901 [consensus/obcpbft/events] loop -> DEBU 5258[0m Stopping timer
+ERR - 18:58:50.903 [consensus/obcpbft] sendBatch -> INFO 5259[0m Creating batch with 1 requests
+ERR - [36m18:58:50.903 [consensus/obcpbft] ProcessEvent -> DEBU 525a[0m Replica 0 batch main thread looping
+ERR - [36m18:58:50.903 [consensus/obcpbft] ProcessEvent -> DEBU 525b[0m Replica 0 processing event
+ERR - [36m18:58:50.903 [consensus/obcpbft] ProcessEvent -> DEBU 525c[0m Replica 0 received incoming message from 0
+ERR - [36m18:58:50.903 [consensus/obcpbft] ProcessEvent -> DEBU 525d[0m Replica 0 batch main thread looping
+ERR - [36m18:58:50.903 [consensus/obcpbft] ProcessEvent -> DEBU 525e[0m Replica 0 processing event
+ERR - [36m18:58:50.920 [consensus/obcpbft] recvRequest -> DEBU 525f[0m Replica 0 received request: GdNc8rssKWiWjjEgw3B1+yHZ8AG3/zyPbiyu2AavJDugpiUrwkUe9nh7saQk5RoyK+XSLU0NIrUFHxOxMzU2kw==
+ERR - [36m18:58:50.937 [consensus/obcpbft] softStartTimer -> DEBU 5260[0m Replica 0 soft starting new view timer for 4s: new request GdNc8rssKWiWjjEgw3B1+yHZ8AG3/zyPbiyu2AavJDugpiUrwkUe9nh7saQk5RoyK+XSLU0NIrUFHxOxMzU2kw==
+ERR - [36m18:58:50.937 [consensus/obcpbft] sendPrePrepare -> DEBU 5261[0m Replica 0 is primary, issuing pre-prepare for request GdNc8rssKWiWjjEgw3B1+yHZ8AG3/zyPbiyu2AavJDugpiUrwkUe9nh7saQk5RoyK+XSLU0NIrUFHxOxMzU2kw==
+ERR - [36m18:58:50.937 [consensus/obcpbft] sendPrePrepare -> DEBU 5262[0m Primary 0 broadcasting pre-prepare for view=0/seqNo=1 and digest GdNc8rssKWiWjjEgw3B1+yHZ8AG3/zyPbiyu2AavJDugpiUrwkUe9nh7saQk5RoyK+XSLU0NIrUFHxOxMzU2kw==
+ERR - [36m18:58:50.937 [consensus/obcpbft/events] loop -> DEBU 5263[0m Attempting to stop an unfired idle timer
+ERR - [36m18:58:50.937 [consensus/obcpbft/events] loop -> DEBU 5264[0m Stopping timer
+ERR - [36m18:58:50.939 [peer] SendMessage -> DEBU 5265[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:50.939 [peer] SendMessage -> DEBU 5267[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:50.939 [peer] SendMessage -> DEBU 5266[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:50.968 [consensus/obcpbft] prepared -> DEBU 5268[0m Replica 0 prepare count for view=0/seqNo=1: 0
+ERR - [36m18:58:50.998 [consensus/obcpbft] ProcessEvent -> DEBU 5269[0m Replica 0 batch main thread looping
+ERR - [36m18:58:50.998 [consensus/obcpbft] ProcessEvent -> DEBU 526a[0m Replica 0 batch main thread looping
+ERR - [36m18:58:50.998 [consensus/obcpbft] ProcessEvent -> DEBU 526b[0m Replica 0 processing event
+ERR - [36m18:58:50.998 [consensus/obcpbft] ProcessEvent -> DEBU 526c[0m Replica 0 received incoming message from 2
+ERR - [36m18:58:50.998 [consensus/obcpbft] ProcessEvent -> DEBU 526d[0m Replica 0 batch main thread looping
+ERR - [36m18:58:50.998 [consensus/obcpbft] ProcessEvent -> DEBU 526e[0m Replica 0 processing event
+ERR - [36m18:58:50.998 [consensus/obcpbft] recvPrepare -> DEBU 526f[0m Replica 0 received prepare from replica 2 for view=0/seqNo=1
+ERR - [36m18:58:50.998 [consensus/obcpbft] prepared -> DEBU 5270[0m Replica 0 prepare count for view=0/seqNo=1: 1
+ERR - [36m18:58:50.998 [consensus/obcpbft] prepared -> DEBU 5271[0m Replica 0 prepare count for view=0/seqNo=1: 1
+ERR - [36m18:58:51.029 [consensus/obcpbft] ProcessEvent -> DEBU 5272[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.029 [consensus/obcpbft] ProcessEvent -> DEBU 5273[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.029 [consensus/obcpbft] ProcessEvent -> DEBU 5274[0m Replica 0 processing event
+ERR - [36m18:58:51.029 [consensus/obcpbft] ProcessEvent -> DEBU 5275[0m Replica 0 received incoming message from 1
+ERR - [36m18:58:51.029 [consensus/obcpbft] ProcessEvent -> DEBU 5276[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.029 [consensus/obcpbft] ProcessEvent -> DEBU 5277[0m Replica 0 processing event
+ERR - [36m18:58:51.029 [consensus/obcpbft] recvPrepare -> DEBU 5278[0m Replica 0 received prepare from replica 1 for view=0/seqNo=1
+ERR - [36m18:58:51.029 [consensus/obcpbft] prepared -> DEBU 5279[0m Replica 0 prepare count for view=0/seqNo=1: 2
+ERR - [36m18:58:51.029 [consensus/obcpbft] prepared -> DEBU 527a[0m Replica 0 prepare count for view=0/seqNo=1: 2
+ERR - [36m18:58:51.029 [consensus/obcpbft] maybeSendCommit -> DEBU 527b[0m Replica 0 broadcasting commit for view=0/seqNo=1
+ERR - [36m18:58:51.029 [consensus/obcpbft] recvCommit -> DEBU 527c[0m Replica 0 received commit from replica 0 for view=0/seqNo=1
+ERR - [36m18:58:51.029 [consensus/obcpbft] prepared -> DEBU 527d[0m Replica 0 prepare count for view=0/seqNo=1: 2
+ERR - [36m18:58:51.029 [consensus/obcpbft] committed -> DEBU 527e[0m Replica 0 commit count for view=0/seqNo=1: 1
+ERR - [36m18:58:51.030 [peer] SendMessage -> DEBU 5280[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:51.030 [peer] SendMessage -> DEBU 527f[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:51.030 [peer] SendMessage -> DEBU 5281[0m Sending message to stream of type: CONSENSUS
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5282[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5283[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5284[0m Replica 0 processing event
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5285[0m Replica 0 received incoming message from 1
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5286[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5287[0m Replica 0 processing event
+ERR - [36m18:58:51.030 [consensus/obcpbft] recvCommit -> DEBU 5288[0m Replica 0 received commit from replica 1 for view=0/seqNo=1
+ERR - [36m18:58:51.030 [consensus/obcpbft] prepared -> DEBU 5289[0m Replica 0 prepare count for view=0/seqNo=1: 2
+ERR - [36m18:58:51.030 [consensus/obcpbft] committed -> DEBU 528a[0m Replica 0 commit count for view=0/seqNo=1: 2
+ERR - [36m18:58:51.030 [consensus/obcpbft] startTimerIfOutstandingRequests -> DEBU 528b[0m Replica 0 not starting timer because all outstanding requests are pending
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 528c[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 528d[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 528e[0m Replica 0 processing event
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 528f[0m Replica 0 received incoming message from 2
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5290[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.030 [consensus/obcpbft] ProcessEvent -> DEBU 5291[0m Replica 0 processing event
+ERR - [36m18:58:51.030 [consensus/obcpbft] recvCommit -> DEBU 5292[0m Replica 0 received commit from replica 2 for view=0/seqNo=1
+ERR - [36m18:58:51.030 [consensus/obcpbft] prepared -> DEBU 5293[0m Replica 0 prepare count for view=0/seqNo=1: 2
+ERR - [36m18:58:51.030 [consensus/obcpbft] committed -> DEBU 5294[0m Replica 0 commit count for view=0/seqNo=1: 3
+ERR - [36m18:58:51.030 [consensus/obcpbft] stopTimer -> DEBU 5295[0m Replica 0 stopping a running new view timer
+ERR - [36m18:58:51.030 [consensus/obcpbft] executeOutstanding -> DEBU 5296[0m Replica 0 attempting to executeOutstanding
+ERR - [36m18:58:51.030 [consensus/obcpbft] prepared -> DEBU 5297[0m Replica 0 prepare count for view=0/seqNo=1: 2
+ERR - [36m18:58:51.030 [consensus/obcpbft] committed -> DEBU 5298[0m Replica 0 commit count for view=0/seqNo=1: 3
+ERR - 18:58:51.030 [consensus/obcpbft] executeOne -> INFO 5299[0m Replica 0 executing/committing request for view=0/seqNo=1 and digest GdNc8rssKWiWjjEgw3B1+yHZ8AG3/zyPbiyu2AavJDugpiUrwkUe9nh7saQk5RoyK+XSLU0NIrUFHxOxMzU2kw==
+ERR - [36m18:58:51.030 [consensus/obcpbft/events] loop -> DEBU 529a[0m Stopping timer
+ERR - [36m18:58:51.049 [consensus/obcpbft] execute -> DEBU 529b[0m Batch replica 0 executing request with transaction d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de from outstandingReqs, seqNo=1
+ERR - [36m18:58:51.095 [consensus/obcpbft] execute -> DEBU 529c[0m Batch replica 0 received exec for seqNo 1 containing 1 transactions
+ERR - [36m18:58:51.095 [consensus/obcpbft] executeOutstanding -> DEBU 529d[0m Replica 0 certstore map[{v:0 n:1}:0xc8202aa000]
+ERR - [36m18:58:51.095 [consensus/obcpbft] startTimerIfOutstandingRequests -> DEBU 529e[0m Replica 0 not starting timer because skip in progress or current exec or in view change
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 529f[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52a0[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52a1[0m Replica 0 processing event
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52a2[0m Replica 0 received incoming message from 3
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52a3[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52a4[0m Replica 0 processing event
+ERR - [36m18:58:51.095 [consensus/obcpbft] recvPrepare -> DEBU 52a5[0m Replica 0 received prepare from replica 3 for view=0/seqNo=1
+ERR - [36m18:58:51.095 [consensus/obcpbft] prepared -> DEBU 52a7[0m Replica 0 prepare count for view=0/seqNo=1: 3
+ERR - [36m18:58:51.095 [consensus/executor] ProcessEvent -> DEBU 52a6[0m Executor is processing an executeEvent
+ERR - [36m18:58:51.095 [consensus/executor] ProcessEvent -> DEBU 52a8[0m Starting new transaction batch
+ERR - [36m18:58:51.095 [crypto] TransactionPreExecution -> DEBU 52a9[0m [validator.peer0] Tx confdential level [PUBLIC].
+ERR - [36m18:58:51.095 [consensus/obcpbft] prepared -> DEBU 52aa[0m Replica 0 prepare count for view=0/seqNo=1: 3
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52ab[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52ac[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52ad[0m Replica 0 processing event
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52ae[0m Replica 0 received incoming message from 3
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52af[0m Replica 0 batch main thread looping
+ERR - [36m18:58:51.095 [consensus/obcpbft] ProcessEvent -> DEBU 52b0[0m Replica 0 processing event
+ERR - [36m18:58:51.095 [consensus/obcpbft] recvCommit -> DEBU 52b1[0m Replica 0 received commit from replica 3 for view=0/seqNo=1
+ERR - [36m18:58:51.095 [consensus/obcpbft] prepared -> DEBU 52b2[0m Replica 0 prepare count for view=0/seqNo=1: 3
+ERR - [36m18:58:51.095 [consensus/obcpbft] committed -> DEBU 52b3[0m Replica 0 commit count for view=0/seqNo=1: 4
+ERR - [36m18:58:51.095 [consensus/obcpbft] stopTimer -> DEBU 52b4[0m Replica 0 stopping a running new view timer
+ERR - [36m18:58:51.095 [consensus/obcpbft] executeOutstanding -> DEBU 52b5[0m Replica 0 not attempting to executeOutstanding because it is currently executing 1
+ERR - [36m18:58:51.095 [consensus/obcpbft] startTimerIfOutstandingRequests -> DEBU 52b6[0m Replica 0 not starting timer because skip in progress or current exec or in view change
+ERR - [36m18:58:51.095 [consensus/obcpbft/events] loop -> DEBU 52b7[0m Attempting to stop an unfired idle timer
+ERR - [36m18:58:51.095 [consensus/obcpbft/events] loop -> DEBU 52b8[0m Stopping timer
+ERR - [36m18:58:51.096 [chaincode] getArgsAndEnv -> DEBU 52b9[0m Executable is /opt/gopath/bin/d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m18:58:51.096 [chaincode] Deploy -> DEBU 52ba[0m deploying chaincode d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de(networkid:a5c090fe-550a-4904-8979-c71505efc6c6,peerid:vp0)
+ERR - [36m18:58:51.096 [container] lockContainer -> DEBU 52bb[0m waiting for container(a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de) lock
+ERR - [36m18:58:51.096 [container] lockContainer -> DEBU 52bc[0m got container (a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de) lock
+ERR - 18:58:51.733 [peer] ensureConnected -> INFO 52bd[0m Touch service indicates no dropped connections
+ERR - [36m18:58:51.733 [peer] ensureConnected -> DEBU 52be[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - [36m18:58:51.733 [peer] ensureConnected -> DEBU 52bf[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - [36m18:58:53.141 [dockercontroller] deployImage -> DEBU 52c0[0m Created image: %s a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m18:58:53.141 [container] unlockContainer -> DEBU 52c1[0m container lock deleted(a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de)
+ERR - [36m18:58:53.141 [state] TxBegin -> DEBU 52c2[0m txBegin() for txUuid [d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de]
+ERR - [36m18:58:53.142 [chaincode] getArgsAndEnv -> DEBU 52c3[0m Executable is /opt/gopath/bin/d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m18:58:53.142 [chaincode] launchAndWaitForRegister -> DEBU 52c4[0m start container: d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de(networkid:a5c090fe-550a-4904-8979-c71505efc6c6,peerid:vp0)
+ERR - [36m18:58:53.142 [container] lockContainer -> DEBU 52c5[0m waiting for container(a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de) lock
+ERR - [36m18:58:53.142 [container] lockContainer -> DEBU 52c6[0m got container (a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de) lock
+ERR - [36m18:58:53.143 [dockercontroller] Start -> DEBU 52c7[0m Cleanup container a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m18:58:53.198 [dockercontroller] stopInternal -> DEBU 52c8[0m Stop container a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de(No such container: a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de)
+ERR - [36m18:58:53.249 [dockercontroller] stopInternal -> DEBU 52c9[0m Kill container a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de (No such container: a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de)
+ERR - [36m18:58:53.297 [dockercontroller] stopInternal -> DEBU 52ca[0m Remove container a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de (No such container: a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de)
+ERR - [36m18:58:53.297 [dockercontroller] Start -> DEBU 52cb[0m Start container a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m18:58:53.297 [dockercontroller] createContainer -> DEBU 52cc[0m Create container: a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m18:58:53.871 [dockercontroller] createContainer -> DEBU 52cd[0m Created container: a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m18:58:53.871 [dockercontroller] Start -> DEBU 52ce[0m Connecting container to network
+ERR - 18:58:57.733 [peer] ensureConnected -> INFO 52cf[0m Touch service indicates no dropped connections
+ERR - [36m18:58:57.733 [peer] ensureConnected -> DEBU 52d0[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:58:57.733 [peer] ensureConnected -> DEBU 52d1[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:01.974 [consensus/handler] HandleMessage -> DEBU 52d2[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:01.974 [peer] HandleMessage -> DEBU 52d3[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m18:59:01.974 [peer] beforeGetPeers -> DEBU 52d4[0m Sending back DISC_PEERS
+ERR - [36m18:59:01.974 [peer] SendMessage -> DEBU 52d5[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m18:59:02.025 [peer] SendMessage -> DEBU 52d6[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m18:59:02.025 [consensus/handler] HandleMessage -> DEBU 52d7[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:02.025 [peer] HandleMessage -> DEBU 52d8[0m Handling Message of type: DISC_PEERS
+ERR - [36m18:59:02.025 [peer] beforePeers -> DEBU 52d9[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m18:59:02.025 [peer] beforePeers -> DEBU 52da[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - 18:59:03.733 [peer] ensureConnected -> INFO 52db[0m Touch service indicates no dropped connections
+ERR - [36m18:59:03.733 [peer] ensureConnected -> DEBU 52dc[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:03.733 [peer] ensureConnected -> DEBU 52dd[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:05.530 [peer] SendMessage -> DEBU 52de[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m18:59:05.530 [consensus/handler] HandleMessage -> DEBU 52df[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:05.530 [peer] HandleMessage -> DEBU 52e0[0m Handling Message of type: DISC_PEERS
+ERR - [36m18:59:05.530 [peer] beforePeers -> DEBU 52e1[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m18:59:05.530 [peer] beforePeers -> DEBU 52e2[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" >
+ERR - [36m18:59:05.571 [consensus/handler] HandleMessage -> DEBU 52e3[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:05.572 [peer] HandleMessage -> DEBU 52e4[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m18:59:05.572 [peer] beforeGetPeers -> DEBU 52e5[0m Sending back DISC_PEERS
+ERR - [36m18:59:05.572 [peer] SendMessage -> DEBU 52e6[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m18:59:06.281 [peer] SendMessage -> DEBU 52e7[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m18:59:06.281 [consensus/handler] HandleMessage -> DEBU 52e8[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:06.281 [peer] HandleMessage -> DEBU 52e9[0m Handling Message of type: DISC_PEERS
+ERR - [36m18:59:06.281 [peer] beforePeers -> DEBU 52ea[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m18:59:06.281 [peer] beforePeers -> DEBU 52eb[0m Received PeersMessage with Peers: peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" > peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" >
+ERR - [36m18:59:06.445 [consensus/handler] HandleMessage -> DEBU 52ec[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:06.445 [peer] HandleMessage -> DEBU 52ed[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m18:59:06.445 [peer] beforeGetPeers -> DEBU 52ee[0m Sending back DISC_PEERS
+ERR - [36m18:59:06.445 [peer] SendMessage -> DEBU 52ef[0m Sending message to stream of type: DISC_PEERS
+ERR - 18:59:09.733 [peer] ensureConnected -> INFO 52f0[0m Touch service indicates no dropped connections
+ERR - [36m18:59:09.733 [peer] ensureConnected -> DEBU 52f1[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:09.733 [peer] ensureConnected -> DEBU 52f2[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - 18:59:15.733 [peer] ensureConnected -> INFO 52f3[0m Touch service indicates no dropped connections
+ERR - [36m18:59:15.733 [peer] ensureConnected -> DEBU 52f4[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:15.733 [peer] ensureConnected -> DEBU 52f5[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - 18:59:21.733 [peer] ensureConnected -> INFO 52f6[0m Touch service indicates no dropped connections
+ERR - [36m18:59:21.733 [peer] ensureConnected -> DEBU 52f7[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:21.733 [peer] ensureConnected -> DEBU 52f8[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - 18:59:27.733 [peer] ensureConnected -> INFO 52f9[0m Touch service indicates no dropped connections
+ERR - [36m18:59:27.733 [peer] ensureConnected -> DEBU 52fa[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:27.733 [peer] ensureConnected -> DEBU 52fb[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:31.973 [consensus/handler] HandleMessage -> DEBU 52fc[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:31.974 [peer] HandleMessage -> DEBU 52fd[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m18:59:31.974 [peer] beforeGetPeers -> DEBU 52fe[0m Sending back DISC_PEERS
+ERR - [36m18:59:31.974 [peer] SendMessage -> DEBU 52ff[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m18:59:32.025 [peer] SendMessage -> DEBU 5300[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m18:59:32.025 [consensus/handler] HandleMessage -> DEBU 5301[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:32.025 [peer] HandleMessage -> DEBU 5302[0m Handling Message of type: DISC_PEERS
+ERR - [36m18:59:32.025 [peer] beforePeers -> DEBU 5303[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m18:59:32.025 [peer] beforePeers -> DEBU 5304[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - 18:59:33.733 [peer] ensureConnected -> INFO 5305[0m Touch service indicates no dropped connections
+ERR - [36m18:59:33.733 [peer] ensureConnected -> DEBU 5306[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:33.733 [peer] ensureConnected -> DEBU 5307[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:35.555 [peer] SendMessage -> DEBU 5308[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m18:59:35.574 [consensus/handler] HandleMessage -> DEBU 5309[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:35.574 [peer] HandleMessage -> DEBU 530a[0m Handling Message of type: DISC_PEERS
+ERR - [36m18:59:35.574 [peer] beforePeers -> DEBU 530b[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m18:59:35.574 [peer] beforePeers -> DEBU 530c[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" >
+ERR - [36m18:59:35.575 [consensus/handler] HandleMessage -> DEBU 530d[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:35.575 [peer] HandleMessage -> DEBU 530e[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m18:59:35.576 [peer] beforeGetPeers -> DEBU 530f[0m Sending back DISC_PEERS
+ERR - [36m18:59:35.576 [peer] SendMessage -> DEBU 5310[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m18:59:36.281 [peer] SendMessage -> DEBU 5311[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m18:59:36.296 [consensus/handler] HandleMessage -> DEBU 5312[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:36.296 [peer] HandleMessage -> DEBU 5313[0m Handling Message of type: DISC_PEERS
+ERR - [36m18:59:36.296 [peer] beforePeers -> DEBU 5314[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m18:59:36.296 [peer] beforePeers -> DEBU 5315[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - [36m18:59:36.451 [consensus/handler] HandleMessage -> DEBU 5316[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m18:59:36.451 [peer] HandleMessage -> DEBU 5317[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m18:59:36.451 [peer] beforeGetPeers -> DEBU 5318[0m Sending back DISC_PEERS
+ERR - [36m18:59:36.451 [peer] SendMessage -> DEBU 5319[0m Sending message to stream of type: DISC_PEERS
+ERR - 18:59:39.733 [peer] ensureConnected -> INFO 531a[0m Touch service indicates no dropped connections
+ERR - [36m18:59:39.733 [peer] ensureConnected -> DEBU 531b[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:39.733 [peer] ensureConnected -> DEBU 531c[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - 18:59:45.733 [peer] ensureConnected -> INFO 531d[0m Touch service indicates no dropped connections
+ERR - [36m18:59:45.733 [peer] ensureConnected -> DEBU 531e[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:45.733 [peer] ensureConnected -> DEBU 531f[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:51.567 [dockercontroller] Start -> DEBU 5320[0m Container connected to the network %s us.blockchain.ibm.com
+ERR - 18:59:51.733 [peer] ensureConnected -> INFO 5321[0m Touch service indicates no dropped connections
+ERR - [36m18:59:51.733 [peer] ensureConnected -> DEBU 5322[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:51.733 [peer] ensureConnected -> DEBU 5323[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - 18:59:57.733 [peer] ensureConnected -> INFO 5324[0m Touch service indicates no dropped connections
+ERR - [36m18:59:57.733 [peer] ensureConnected -> DEBU 5325[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - [36m18:59:57.733 [peer] ensureConnected -> DEBU 5326[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:01.973 [consensus/handler] HandleMessage -> DEBU 5327[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:01.973 [peer] HandleMessage -> DEBU 5328[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:00:01.973 [peer] beforeGetPeers -> DEBU 5329[0m Sending back DISC_PEERS
+ERR - [36m19:00:01.973 [peer] SendMessage -> DEBU 532a[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:00:02.025 [peer] SendMessage -> DEBU 532b[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:00:02.025 [consensus/handler] HandleMessage -> DEBU 532c[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:02.025 [peer] HandleMessage -> DEBU 532d[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:00:02.025 [peer] beforePeers -> DEBU 532e[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:00:02.025 [peer] beforePeers -> DEBU 532f[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - 19:00:03.733 [peer] ensureConnected -> INFO 5330[0m Touch service indicates no dropped connections
+ERR - [36m19:00:03.733 [peer] ensureConnected -> DEBU 5331[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:03.733 [peer] ensureConnected -> DEBU 5332[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:05.530 [peer] SendMessage -> DEBU 5333[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:00:05.530 [consensus/handler] HandleMessage -> DEBU 5334[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:05.530 [peer] HandleMessage -> DEBU 5335[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:00:05.530 [peer] beforePeers -> DEBU 5336[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:00:05.530 [peer] beforePeers -> DEBU 5337[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" >
+ERR - [36m19:00:05.571 [consensus/handler] HandleMessage -> DEBU 5338[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:05.572 [peer] HandleMessage -> DEBU 5339[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:00:05.572 [peer] beforeGetPeers -> DEBU 533a[0m Sending back DISC_PEERS
+ERR - [36m19:00:05.572 [peer] SendMessage -> DEBU 533b[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:00:06.281 [peer] SendMessage -> DEBU 533c[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:00:06.281 [consensus/handler] HandleMessage -> DEBU 533d[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:06.281 [peer] HandleMessage -> DEBU 533e[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:00:06.281 [peer] beforePeers -> DEBU 533f[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:00:06.281 [peer] beforePeers -> DEBU 5340[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - [36m19:00:06.446 [consensus/handler] HandleMessage -> DEBU 5341[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:06.446 [peer] HandleMessage -> DEBU 5342[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:00:06.446 [peer] beforeGetPeers -> DEBU 5343[0m Sending back DISC_PEERS
+ERR - [36m19:00:06.446 [peer] SendMessage -> DEBU 5344[0m Sending message to stream of type: DISC_PEERS
+ERR - 19:00:09.733 [peer] ensureConnected -> INFO 5345[0m Touch service indicates no dropped connections
+ERR - [36m19:00:09.733 [peer] ensureConnected -> DEBU 5346[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:09.733 [peer] ensureConnected -> DEBU 5347[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - 19:00:15.733 [peer] ensureConnected -> INFO 5348[0m Touch service indicates no dropped connections
+ERR - [36m19:00:15.733 [peer] ensureConnected -> DEBU 5349[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:15.733 [peer] ensureConnected -> DEBU 534a[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [31m19:00:21.691 [rest] validateEnrollmentIDParameter -> ERRO 534b[0m Invalid enrollment ID parameter 'dashboarduser_type1_972d0ec434 '.
+ERR - 19:00:21.733 [peer] ensureConnected -> INFO 534c[0m Touch service indicates no dropped connections
+ERR - [36m19:00:21.733 [peer] ensureConnected -> DEBU 534d[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:21.733 [peer] ensureConnected -> DEBU 534e[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - 19:00:27.733 [peer] ensureConnected -> INFO 534f[0m Touch service indicates no dropped connections
+ERR - [36m19:00:27.733 [peer] ensureConnected -> DEBU 5350[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:27.733 [peer] ensureConnected -> DEBU 5351[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:31.973 [consensus/handler] HandleMessage -> DEBU 5352[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:31.973 [peer] HandleMessage -> DEBU 5353[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:00:31.973 [peer] beforeGetPeers -> DEBU 5354[0m Sending back DISC_PEERS
+ERR - [36m19:00:31.973 [peer] SendMessage -> DEBU 5355[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:00:32.025 [peer] SendMessage -> DEBU 5356[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:00:32.025 [consensus/handler] HandleMessage -> DEBU 5357[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:32.025 [peer] HandleMessage -> DEBU 5358[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:00:32.025 [peer] beforePeers -> DEBU 5359[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:00:32.025 [peer] beforePeers -> DEBU 535a[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - 19:00:33.733 [peer] ensureConnected -> INFO 535b[0m Touch service indicates no dropped connections
+ERR - [36m19:00:33.733 [peer] ensureConnected -> DEBU 535c[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:33.733 [peer] ensureConnected -> DEBU 535d[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:35.530 [peer] SendMessage -> DEBU 535e[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:00:35.530 [consensus/handler] HandleMessage -> DEBU 535f[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:35.530 [peer] HandleMessage -> DEBU 5360[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:00:35.530 [peer] beforePeers -> DEBU 5361[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:00:35.530 [peer] beforePeers -> DEBU 5362[0m Received PeersMessage with Peers: peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" >
+ERR - [36m19:00:35.571 [consensus/handler] HandleMessage -> DEBU 5363[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:35.571 [peer] HandleMessage -> DEBU 5364[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:00:35.571 [peer] beforeGetPeers -> DEBU 5365[0m Sending back DISC_PEERS
+ERR - [36m19:00:35.572 [peer] SendMessage -> DEBU 5366[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:00:36.281 [peer] SendMessage -> DEBU 5367[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:00:36.282 [consensus/handler] HandleMessage -> DEBU 5368[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:36.282 [peer] HandleMessage -> DEBU 5369[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:00:36.282 [peer] beforePeers -> DEBU 536a[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:00:36.282 [peer] beforePeers -> DEBU 536b[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - [36m19:00:36.446 [consensus/handler] HandleMessage -> DEBU 536c[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:00:36.446 [peer] HandleMessage -> DEBU 536d[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:00:36.446 [peer] beforeGetPeers -> DEBU 536e[0m Sending back DISC_PEERS
+ERR - [36m19:00:36.446 [peer] SendMessage -> DEBU 536f[0m Sending message to stream of type: DISC_PEERS
+ERR - 19:00:39.733 [peer] ensureConnected -> INFO 5370[0m Touch service indicates no dropped connections
+ERR - [36m19:00:39.733 [peer] ensureConnected -> DEBU 5371[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:39.733 [peer] ensureConnected -> DEBU 5372[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - 19:00:45.733 [peer] ensureConnected -> INFO 5373[0m Touch service indicates no dropped connections
+ERR - [36m19:00:45.733 [peer] ensureConnected -> DEBU 5374[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:45.733 [peer] ensureConnected -> DEBU 5375[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:47.796 [chaincode] HandleChaincodeStream -> DEBU 5376[0m Current context deadline = 0001-01-01 00:00:00 +0000 UTC, ok = false
+ERR - [36m19:00:47.797 [chaincode] processStream -> DEBU 5377[0m []Received message REGISTER from shim
+ERR - [36m19:00:47.797 [chaincode] HandleMessage -> DEBU 5378[0m []Handling ChaincodeMessage of type: REGISTER in state created
+ERR - [36m19:00:47.797 [chaincode] beforeRegisterEvent -> DEBU 5379[0m Received REGISTER in state created
+ERR - [36m19:00:47.797 [chaincode] registerHandler -> DEBU 537a[0m registered handler complete for chaincode d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m19:00:47.797 [chaincode] beforeRegisterEvent -> DEBU 537b[0m Got REGISTER for chaincodeID = name:"d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de" , sending back REGISTERED
+ERR - [36m19:00:47.797 [chaincode] notifyDuringStartup -> DEBU 537c[0m Notifying during startup
+ERR - [36m19:00:48.203 [dockercontroller] Start -> DEBU 537d[0m Started container a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m19:00:48.203 [container] unlockContainer -> DEBU 537e[0m container lock deleted(a5c090fe-550a-4904-8979-c71505efc6c6-vp0-d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de)
+ERR - [36m19:00:48.203 [chaincode] initOrReady -> DEBU 537f[0m sending INIT
+ERR - [36m19:00:48.205 [chaincode] setChaincodeSecurityContext -> DEBU 5380[0m setting chaincode security context...
+ERR - [36m19:00:48.205 [chaincode] setChaincodeSecurityContext -> DEBU 5381[0m setting chaincode security context. Transaction different from nil
+ERR - [36m19:00:48.205 [chaincode] setChaincodeSecurityContext -> DEBU 5382[0m setting chaincode security context. Metadata []
+ERR - [36m19:00:48.205 [chaincode] processStream -> DEBU 5383[0m [d827db00]Move state message INIT
+ERR - [36m19:00:48.205 [chaincode] HandleMessage -> DEBU 5384[0m [d827db00]Handling ChaincodeMessage of type: INIT in state established
+ERR - [36m19:00:48.205 [chaincode] beforeInitState -> DEBU 5385[0m Before state established.. notifying waiter that we are up
+ERR - [36m19:00:48.205 [chaincode] notifyDuringStartup -> DEBU 5386[0m Notifying during startup
+ERR - [36m19:00:48.205 [chaincode] enterInitState -> DEBU 5387[0m [d827db00]Entered state init
+ERR - [36m19:00:48.206 [chaincode] processStream -> DEBU 5388[0m [d827db00]Received message PUT_STATE from shim
+ERR - [36m19:00:48.206 [chaincode] HandleMessage -> DEBU 5389[0m [d827db00]Handling ChaincodeMessage of type: PUT_STATE in state init
+ERR - [36m19:00:48.206 [chaincode] afterPutState -> DEBU 538a[0m Received PUT_STATE in state busyinit, invoking put state to ledger
+ERR - [36m19:00:48.206 [chaincode] func1 -> DEBU 538b[0m [d827db00]state is busyinit
+ERR - [36m19:00:48.206 [state] Set -> DEBU 538c[0m set() chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[abc], value=[[]byte{0x31, 0x32, 0x33, 0x34, 0x35}]
+ERR - [36m19:00:48.206 [buckettree] newDataKey -> DEBU 538d[0m Enter - newDataKey. chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[abc]
+ERR - [36m19:00:48.206 [buckettree] newDataKey -> DEBU 538e[0m Exit - newDataKey=[bucketKey=[level=[9], bucketNumber=[636706]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de abc]]
+ERR - [36m19:00:48.206 [buckettree] fetchDataNodeFromDB -> DEBU 538f[0m nodeBytes from db is nil
+ERR - [36m19:00:48.206 [chaincode] func1 -> DEBU 5390[0m [d827db00]Completed PUT_STATE. Sending RESPONSE
+ERR - [36m19:00:48.206 [chaincode] 1 -> DEBU 5391[0m [d827db00]enterBusyState trigger event RESPONSE
+ERR - [36m19:00:48.206 [chaincode] processStream -> DEBU 5392[0m [d827db00]Move state message RESPONSE
+ERR - [36m19:00:48.206 [chaincode] HandleMessage -> DEBU 5393[0m [d827db00]Handling ChaincodeMessage of type: RESPONSE in state busyinit
+ERR - [36m19:00:48.206 [chaincode] enterInitState -> DEBU 5394[0m [d827db00]Entered state init
+ERR - [36m19:00:48.206 [chaincode] processStream -> DEBU 5395[0m [d827db00]sending state message RESPONSE
+ERR - [36m19:00:48.207 [chaincode] processStream -> DEBU 5396[0m [d827db00]Received message PUT_STATE from shim
+ERR - [36m19:00:48.207 [chaincode] HandleMessage -> DEBU 5397[0m [d827db00]Handling ChaincodeMessage of type: PUT_STATE in state init
+ERR - [36m19:00:48.207 [chaincode] afterPutState -> DEBU 5398[0m Received PUT_STATE in state busyinit, invoking put state to ledger
+ERR - [36m19:00:48.207 [chaincode] func1 -> DEBU 5399[0m [d827db00]state is busyinit
+ERR - [36m19:00:48.207 [state] Set -> DEBU 539a[0m set() chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[_marbleindex], value=[[]byte{0x6e, 0x75, 0x6c, 0x6c}]
+ERR - [36m19:00:48.207 [buckettree] newDataKey -> DEBU 539b[0m Enter - newDataKey. chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[_marbleindex]
+ERR - [36m19:00:48.207 [buckettree] newDataKey -> DEBU 539c[0m Exit - newDataKey=[bucketKey=[level=[9], bucketNumber=[409175]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de _marbleindex]]
+ERR - [36m19:00:48.207 [buckettree] fetchDataNodeFromDB -> DEBU 539d[0m nodeBytes from db is nil
+ERR - [36m19:00:48.207 [chaincode] func1 -> DEBU 539e[0m [d827db00]Completed PUT_STATE. Sending RESPONSE
+ERR - [36m19:00:48.207 [chaincode] 1 -> DEBU 539f[0m [d827db00]enterBusyState trigger event RESPONSE
+ERR - [36m19:00:48.207 [chaincode] processStream -> DEBU 53a0[0m [d827db00]Move state message RESPONSE
+ERR - [36m19:00:48.207 [chaincode] HandleMessage -> DEBU 53a1[0m [d827db00]Handling ChaincodeMessage of type: RESPONSE in state busyinit
+ERR - [36m19:00:48.207 [chaincode] enterInitState -> DEBU 53a2[0m [d827db00]Entered state init
+ERR - [36m19:00:48.207 [chaincode] processStream -> DEBU 53a3[0m [d827db00]sending state message RESPONSE
+ERR - [36m19:00:48.207 [chaincode] processStream -> DEBU 53a4[0m [d827db00]Received message PUT_STATE from shim
+ERR - [36m19:00:48.207 [chaincode] HandleMessage -> DEBU 53a5[0m [d827db00]Handling ChaincodeMessage of type: PUT_STATE in state init
+ERR - [36m19:00:48.207 [chaincode] afterPutState -> DEBU 53a6[0m Received PUT_STATE in state busyinit, invoking put state to ledger
+ERR - [36m19:00:48.207 [chaincode] func1 -> DEBU 53a7[0m [d827db00]state is busyinit
+ERR - [36m19:00:48.207 [state] Set -> DEBU 53a8[0m set() chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[_opentrades], value=[[]byte{0x7b, 0x22, 0x6f, 0x70, 0x65, 0x6e, 0x5f, 0x74, 0x72, 0x61, 0x64, 0x65, 0x73, 0x22, 0x3a, 0x6e, 0x75, 0x6c, 0x6c, 0x7d}]
+ERR - [36m19:00:48.207 [buckettree] newDataKey -> DEBU 53a9[0m Enter - newDataKey. chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[_opentrades]
+ERR - [36m19:00:48.207 [buckettree] newDataKey -> DEBU 53aa[0m Exit - newDataKey=[bucketKey=[level=[9], bucketNumber=[210584]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de _opentrades]]
+ERR - [36m19:00:48.207 [buckettree] fetchDataNodeFromDB -> DEBU 53ab[0m nodeBytes from db is nil
+ERR - [36m19:00:48.207 [chaincode] func1 -> DEBU 53ac[0m [d827db00]Completed PUT_STATE. Sending RESPONSE
+ERR - [36m19:00:48.207 [chaincode] 1 -> DEBU 53ad[0m [d827db00]enterBusyState trigger event RESPONSE
+ERR - [36m19:00:48.207 [chaincode] processStream -> DEBU 53ae[0m [d827db00]Move state message RESPONSE
+ERR - [36m19:00:48.207 [chaincode] HandleMessage -> DEBU 53af[0m [d827db00]Handling ChaincodeMessage of type: RESPONSE in state busyinit
+ERR - [36m19:00:48.207 [chaincode] enterInitState -> DEBU 53b0[0m [d827db00]Entered state init
+ERR - [36m19:00:48.208 [chaincode] processStream -> DEBU 53b1[0m [d827db00]sending state message RESPONSE
+ERR - [36m19:00:48.208 [chaincode] processStream -> DEBU 53b2[0m [d827db00]Received message COMPLETED from shim
+ERR - [36m19:00:48.208 [chaincode] HandleMessage -> DEBU 53b3[0m [d827db00]Handling ChaincodeMessage of type: COMPLETED in state init
+ERR - [36m19:00:48.208 [chaincode] beforeCompletedEvent -> DEBU 53b4[0m [d827db00]beforeCompleted - not in ready state will notify when in readystate
+ERR - [36m19:00:48.208 [chaincode] enterReadyState -> DEBU 53b5[0m [d827db00]Entered state ready
+ERR - [36m19:00:48.208 [chaincode] notify -> DEBU 53b6[0m notifying Uuid:d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de
+ERR - [36m19:00:48.208 [chaincode] Launch -> DEBU 53b7[0m sending init completed
+ERR - [36m19:00:48.208 [chaincode] Launch -> DEBU 53b8[0m LaunchChaincode complete
+ERR - [36m19:00:48.208 [state] TxFinish -> DEBU 53b9[0m txFinish() for txUuid [d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], txSuccessful=[true]
+ERR - [36m19:00:48.208 [state] TxFinish -> DEBU 53ba[0m txFinish() for txUuid [d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de] merging state changes
+ERR - [36m19:00:48.208 [statemgmt] getSortedKeys -> DEBU 53bb[0m Sorted keys = []string{"_marbleindex", "_opentrades", "abc"}
+ERR - [36m19:00:48.208 [statemgmt] ComputeCryptoHash -> DEBU 53bc[0m computing hash on []byte{0x64, 0x38, 0x32, 0x37, 0x64, 0x62, 0x30, 0x30, 0x39, 0x62, 0x63, 0x62, 0x66, 0x64, 0x38, 0x34, 0x30, 0x62, 0x32, 0x31, 0x39, 0x37, 0x33, 0x34, 0x35, 0x64, 0x38, 0x37, 0x38, 0x61, 0x36, 0x66, 0x61, 0x64, 0x30, 0x33, 0x66, 0x33, 0x37, 0x35, 0x65, 0x37, 0x64, 0x36, 0x31, 0x39, 0x31, 0x66, 0x37, 0x65, 0x64, 0x31, 0x32, 0x65, 0x31, 0x36, 0x39, 0x66, 0x32, 0x33, 0x65, 0x65, 0x33, 0x63, 0x39, 0x62, 0x61, 0x61, 0x61, 0x30, 0x32, 0x64, 0x30, 0x36, 0x64, 0x33, 0x63, 0x36, 0x62, 0x66, 0x33, 0x30, 0x62, 0x32, 0x39, 0x61, 0x36, 0x32, 0x31, 0x63, 0x30, 0x33, 0x34, 0x35, 0x62, 0x62, 0x61, 0x64, 0x39, 0x30, 0x63, 0x62, 0x30, 0x34, 0x38, 0x66, 0x62, 0x63, 0x61, 0x63, 0x63, 0x30, 0x39, 0x34, 0x39, 0x62, 0x63, 0x66, 0x32, 0x39, 0x31, 0x36, 0x38, 0x30, 0x36, 0x35, 0x64, 0x65, 0x5f, 0x6d, 0x61, 0x72, 0x62, 0x6c, 0x65, 0x69, 0x6e, 0x64, 0x65, 0x78, 0x6e, 0x75, 0x6c, 0x6c, 0x5f, 0x6f, 0x70, 0x65, 0x6e, 0x74, 0x72, 0x61, 0x64, 0x65, 0x73, 0x7b, 0x22, 0x6f, 0x70, 0x65, 0x6e, 0x5f, 0x74, 0x72, 0x61, 0x64, 0x65, 0x73, 0x22, 0x3a, 0x6e, 0x75, 0x6c, 0x6c, 0x7d, 0x61, 0x62, 0x63, 0x31, 0x32, 0x33, 0x34, 0x35}
+ERR - [36m19:00:48.208 [state] GetHash -> DEBU 53bd[0m Enter - GetHash()
+ERR - [36m19:00:48.208 [state] GetHash -> DEBU 53be[0m updating stateImpl with working-set
+ERR - [36m19:00:48.208 [buckettree] PrepareWorkingSet -> DEBU 53bf[0m Enter - PrepareWorkingSet()
+ERR - [36m19:00:48.208 [buckettree] newDataKey -> DEBU 53c0[0m Enter - newDataKey. chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[_opentrades]
+ERR - [36m19:00:48.208 [buckettree] newDataKey -> DEBU 53c1[0m Exit - newDataKey=[bucketKey=[level=[9], bucketNumber=[210584]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de _opentrades]]
+ERR - [36m19:00:48.208 [buckettree] add -> DEBU 53c2[0m Adding dataNode=[dataKey=[bucketKey=[level=[9], bucketNumber=[210584]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de _opentrades]], value=[{"open_trades":null}]] against bucketKey=[level=[9], bucketNumber=[210584]]
+ERR - [36m19:00:48.208 [buckettree] newDataKey -> DEBU 53c3[0m Enter - newDataKey. chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[abc]
+ERR - [36m19:00:48.208 [buckettree] newDataKey -> DEBU 53c4[0m Exit - newDataKey=[bucketKey=[level=[9], bucketNumber=[636706]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de abc]]
+ERR - [36m19:00:48.208 [buckettree] add -> DEBU 53c5[0m Adding dataNode=[dataKey=[bucketKey=[level=[9], bucketNumber=[636706]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de abc]], value=[12345]] against bucketKey=[level=[9], bucketNumber=[636706]]
+ERR - [36m19:00:48.208 [buckettree] newDataKey -> DEBU 53c6[0m Enter - newDataKey. chaincodeID=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de], key=[_marbleindex]
+ERR - [36m19:00:48.208 [buckettree] newDataKey -> DEBU 53c7[0m Exit - newDataKey=[bucketKey=[level=[9], bucketNumber=[409175]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de _marbleindex]]
+ERR - [36m19:00:48.208 [buckettree] add -> DEBU 53c8[0m Adding dataNode=[dataKey=[bucketKey=[level=[9], bucketNumber=[409175]], compositeKey=[d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de _marbleindex]], value=[null]] against bucketKey=[level=[9], bucketNumber=[409175]]
+ERR - [36m19:00:48.208 [buckettree] ComputeCryptoHash -> DEBU 53c9[0m Enter - ComputeCryptoHash()
+ERR - [36m19:00:48.208 [buckettree] ComputeCryptoHash -> DEBU 53ca[0m Recomputing crypto-hash...
+ERR - [36m19:00:48.208 [buckettree] getAffectedBuckets -> DEBU 53cb[0m Adding changed bucket [level=[9], bucketNumber=[409175]]
+ERR - [36m19:00:48.208 [buckettree] getAffectedBuckets -> DEBU 53cc[0m Adding changed bucket [level=[9], bucketNumber=[210584]]
+ERR - [36m19:00:48.208 [buckettree] getAffectedBuckets -> DEBU 53cd[0m Adding changed bucket [level=[9], bucketNumber=[636706]]
+ERR - [36m19:00:48.208 [buckettree] getAffectedBuckets -> DEBU 53ce[0m Changed buckets are = [[level=[9], bucketNumber=[409175] level=[9], bucketNumber=[210584] level=[9], bucketNumber=[636706]]]
+ERR - [36m19:00:48.208 [buckettree] fetchDataNodesFromDBFor -> DEBU 53cf[0m Fetching from DB data nodes for bucket [level=[9], bucketNumber=[409175]]
+ERR - [36m19:00:48.208 [buckettree] fetchDataNodesFromDBFor -> DEBU 53d0[0m Returning results [[]]
+ERR - [36m19:00:48.208 [buckettree] computeDataNodesCryptoHash -> DEBU 53d1[0m Computing crypto-hash for bucket [level=[9], bucketNumber=[409175]]. numUpdatedNodes=[1], numExistingNodes=[0]
+ERR - [36m19:00:48.208 [buckettree] computeCryptoHash -> DEBU 53d2[0m Hashable content for bucket [level=[9], bucketNumber=[409175]]: length=149, contentInStringForm=[�d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de_marbleindexnull]
+ERR - [36m19:00:48.208 [buckettree] processDataNodeDelta -> DEBU 53d3[0m Crypto-hash for lowest-level bucket [level=[9], bucketNumber=[409175]] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.208 [buckettree] computeParentBucketNumber -> DEBU 53d4[0m Computing parent bucket number for bucketNumber [409175]
+ERR - [36m19:00:48.208 [buckettree] fetchDataNodesFromDBFor -> DEBU 53d5[0m Fetching from DB data nodes for bucket [level=[9], bucketNumber=[210584]]
+ERR - [36m19:00:48.208 [buckettree] fetchDataNodesFromDBFor -> DEBU 53d6[0m Returning results [[]]
+ERR - [36m19:00:48.208 [buckettree] computeDataNodesCryptoHash -> DEBU 53d7[0m Computing crypto-hash for bucket [level=[9], bucketNumber=[210584]]. numUpdatedNodes=[1], numExistingNodes=[0]
+ERR - [36m19:00:48.208 [buckettree] computeCryptoHash -> DEBU 53d8[0m Hashable content for bucket [level=[9], bucketNumber=[210584]]: length=164, contentInStringForm=[�d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065de_opentrades{"open_trades":null}]
+ERR - [36m19:00:48.208 [buckettree] processDataNodeDelta -> DEBU 53d9[0m Crypto-hash for lowest-level bucket [level=[9], bucketNumber=[210584]] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.208 [buckettree] computeParentBucketNumber -> DEBU 53da[0m Computing parent bucket number for bucketNumber [210584]
+ERR - [36m19:00:48.208 [buckettree] fetchDataNodesFromDBFor -> DEBU 53db[0m Fetching from DB data nodes for bucket [level=[9], bucketNumber=[636706]]
+ERR - [36m19:00:48.208 [buckettree] fetchDataNodesFromDBFor -> DEBU 53dc[0m Returning results [[]]
+ERR - [36m19:00:48.208 [buckettree] computeDataNodesCryptoHash -> DEBU 53dd[0m Computing crypto-hash for bucket [level=[9], bucketNumber=[636706]]. numUpdatedNodes=[1], numExistingNodes=[0]
+ERR - [36m19:00:48.208 [buckettree] computeCryptoHash -> DEBU 53de[0m Hashable content for bucket [level=[9], bucketNumber=[636706]]: length=141, contentInStringForm=[�d827db009bcbfd840b2197345d878a6fad03f375e7d6191f7ed12e169f23ee3c9baaa02d06d3c6bf30b29a621c0345bbad90cb048fbcacc0949bcf29168065deabc12345]
+ERR - [36m19:00:48.209 [buckettree] processDataNodeDelta -> DEBU 53df[0m Crypto-hash for lowest-level bucket [level=[9], bucketNumber=[636706]] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 53e0[0m Computing parent bucket number for bucketNumber [636706]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53e1[0m Bucket tree delta. Number of buckets at level [8] are [3]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53e2[0m bucketNode in tree-delta [bucketKey={level=[8], bucketNumber=[127342]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53e3[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53e4[0m Computing cryptoHash for bucket [bucketKey={level=[8], bucketNumber=[127342]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53e5[0m Appending crypto-hash for child bucket = [level=[9], bucketNumber=[636706]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53e6[0m Propagating crypto-hash of single child node for bucket = [level=[8], bucketNumber=[127342]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53e7[0m cryptoHash for bucket [bucketKey={level=[8], bucketNumber=[127342]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 53e8[0m Computing parent bucket number for bucketNumber [127342]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53e9[0m bucketNode in tree-delta [bucketKey={level=[8], bucketNumber=[81835]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53ea[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53eb[0m Computing cryptoHash for bucket [bucketKey={level=[8], bucketNumber=[81835]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53ec[0m Appending crypto-hash for child bucket = [level=[9], bucketNumber=[409175]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53ed[0m Propagating crypto-hash of single child node for bucket = [level=[8], bucketNumber=[81835]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53ee[0m cryptoHash for bucket [bucketKey={level=[8], bucketNumber=[81835]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 53ef[0m Computing parent bucket number for bucketNumber [81835]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53f0[0m bucketNode in tree-delta [bucketKey={level=[8], bucketNumber=[42117]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53f1[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53f2[0m Computing cryptoHash for bucket [bucketKey={level=[8], bucketNumber=[42117]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53f3[0m Appending crypto-hash for child bucket = [level=[9], bucketNumber=[210584]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53f4[0m Propagating crypto-hash of single child node for bucket = [level=[8], bucketNumber=[42117]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53f5[0m cryptoHash for bucket [bucketKey={level=[8], bucketNumber=[42117]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 53f6[0m Computing parent bucket number for bucketNumber [42117]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53f7[0m Bucket tree delta. Number of buckets at level [7] are [3]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53f8[0m bucketNode in tree-delta [bucketKey={level=[7], bucketNumber=[16367]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53f9[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53fa[0m Computing cryptoHash for bucket [bucketKey={level=[7], bucketNumber=[16367]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53fb[0m Appending crypto-hash for child bucket = [level=[8], bucketNumber=[81835]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 53fc[0m Propagating crypto-hash of single child node for bucket = [level=[7], bucketNumber=[16367]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53fd[0m cryptoHash for bucket [bucketKey={level=[7], bucketNumber=[16367]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 53fe[0m Computing parent bucket number for bucketNumber [16367]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 53ff[0m bucketNode in tree-delta [bucketKey={level=[7], bucketNumber=[8424]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5400[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5401[0m Computing cryptoHash for bucket [bucketKey={level=[7], bucketNumber=[8424]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 5402[0m Appending crypto-hash for child bucket = [level=[8], bucketNumber=[42117]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 5403[0m Propagating crypto-hash of single child node for bucket = [level=[7], bucketNumber=[8424]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5404[0m cryptoHash for bucket [bucketKey={level=[7], bucketNumber=[8424]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 5405[0m Computing parent bucket number for bucketNumber [8424]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5406[0m bucketNode in tree-delta [bucketKey={level=[7], bucketNumber=[25469]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5407[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5408[0m Computing cryptoHash for bucket [bucketKey={level=[7], bucketNumber=[25469]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 5409[0m Appending crypto-hash for child bucket = [level=[8], bucketNumber=[127342]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 540a[0m Propagating crypto-hash of single child node for bucket = [level=[7], bucketNumber=[25469]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 540b[0m cryptoHash for bucket [bucketKey={level=[7], bucketNumber=[25469]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 540c[0m Computing parent bucket number for bucketNumber [25469]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 540d[0m Bucket tree delta. Number of buckets at level [6] are [3]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 540e[0m bucketNode in tree-delta [bucketKey={level=[6], bucketNumber=[3274]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 540f[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5410[0m Computing cryptoHash for bucket [bucketKey={level=[6], bucketNumber=[3274]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 5411[0m Appending crypto-hash for child bucket = [level=[7], bucketNumber=[16367]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 5412[0m Propagating crypto-hash of single child node for bucket = [level=[6], bucketNumber=[3274]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5413[0m cryptoHash for bucket [bucketKey={level=[6], bucketNumber=[3274]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 5414[0m Computing parent bucket number for bucketNumber [3274]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5415[0m bucketNode in tree-delta [bucketKey={level=[6], bucketNumber=[1685]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5416[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 5417[0m Computing cryptoHash for bucket [bucketKey={level=[6], bucketNumber=[1685]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 5418[0m Appending crypto-hash for child bucket = [level=[7], bucketNumber=[8424]]
+ERR - [36m19:00:48.209 [buckettree] computeCryptoHash -> DEBU 5419[0m Propagating crypto-hash of single child node for bucket = [level=[6], bucketNumber=[1685]]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 541a[0m cryptoHash for bucket [bucketKey={level=[6], bucketNumber=[1685]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.209 [buckettree] computeParentBucketNumber -> DEBU 541b[0m Computing parent bucket number for bucketNumber [1685]
+ERR - [36m19:00:48.209 [buckettree] processBucketTreeDelta -> DEBU 541c[0m bucketNode in tree-delta [bucketKey={level=[6], bucketNumber=[5094]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 541d[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 541e[0m Computing cryptoHash for bucket [bucketKey={level=[6], bucketNumber=[5094]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 541f[0m Appending crypto-hash for child bucket = [level=[7], bucketNumber=[25469]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5420[0m Propagating crypto-hash of single child node for bucket = [level=[6], bucketNumber=[5094]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5421[0m cryptoHash for bucket [bucketKey={level=[6], bucketNumber=[5094]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 5422[0m Computing parent bucket number for bucketNumber [5094]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5423[0m Bucket tree delta. Number of buckets at level [5] are [3]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5424[0m bucketNode in tree-delta [bucketKey={level=[5], bucketNumber=[337]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5425[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5426[0m Computing cryptoHash for bucket [bucketKey={level=[5], bucketNumber=[337]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5427[0m Appending crypto-hash for child bucket = [level=[6], bucketNumber=[1685]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5428[0m Propagating crypto-hash of single child node for bucket = [level=[5], bucketNumber=[337]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5429[0m cryptoHash for bucket [bucketKey={level=[5], bucketNumber=[337]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 542a[0m Computing parent bucket number for bucketNumber [337]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 542b[0m bucketNode in tree-delta [bucketKey={level=[5], bucketNumber=[1019]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 542c[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 542d[0m Computing cryptoHash for bucket [bucketKey={level=[5], bucketNumber=[1019]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 542e[0m Appending crypto-hash for child bucket = [level=[6], bucketNumber=[5094]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 542f[0m Propagating crypto-hash of single child node for bucket = [level=[5], bucketNumber=[1019]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5430[0m cryptoHash for bucket [bucketKey={level=[5], bucketNumber=[1019]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 5431[0m Computing parent bucket number for bucketNumber [1019]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5432[0m bucketNode in tree-delta [bucketKey={level=[5], bucketNumber=[655]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5433[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5434[0m Computing cryptoHash for bucket [bucketKey={level=[5], bucketNumber=[655]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5435[0m Appending crypto-hash for child bucket = [level=[6], bucketNumber=[3274]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5436[0m Propagating crypto-hash of single child node for bucket = [level=[5], bucketNumber=[655]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5437[0m cryptoHash for bucket [bucketKey={level=[5], bucketNumber=[655]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 5438[0m Computing parent bucket number for bucketNumber [655]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5439[0m Bucket tree delta. Number of buckets at level [4] are [3]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 543a[0m bucketNode in tree-delta [bucketKey={level=[4], bucketNumber=[68]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 543b[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 543c[0m Computing cryptoHash for bucket [bucketKey={level=[4], bucketNumber=[68]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 543d[0m Appending crypto-hash for child bucket = [level=[5], bucketNumber=[337]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 543e[0m Propagating crypto-hash of single child node for bucket = [level=[4], bucketNumber=[68]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 543f[0m cryptoHash for bucket [bucketKey={level=[4], bucketNumber=[68]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 5440[0m Computing parent bucket number for bucketNumber [68]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5441[0m bucketNode in tree-delta [bucketKey={level=[4], bucketNumber=[204]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5442[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5443[0m Computing cryptoHash for bucket [bucketKey={level=[4], bucketNumber=[204]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5444[0m Appending crypto-hash for child bucket = [level=[5], bucketNumber=[1019]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5445[0m Propagating crypto-hash of single child node for bucket = [level=[4], bucketNumber=[204]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5446[0m cryptoHash for bucket [bucketKey={level=[4], bucketNumber=[204]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 5447[0m Computing parent bucket number for bucketNumber [204]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5448[0m bucketNode in tree-delta [bucketKey={level=[4], bucketNumber=[131]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5449[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 544a[0m Computing cryptoHash for bucket [bucketKey={level=[4], bucketNumber=[131]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 544b[0m Appending crypto-hash for child bucket = [level=[5], bucketNumber=[655]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 544c[0m Propagating crypto-hash of single child node for bucket = [level=[4], bucketNumber=[131]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 544d[0m cryptoHash for bucket [bucketKey={level=[4], bucketNumber=[131]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={4}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 544e[0m Computing parent bucket number for bucketNumber [131]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 544f[0m Bucket tree delta. Number of buckets at level [3] are [3]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5450[0m bucketNode in tree-delta [bucketKey={level=[3], bucketNumber=[14]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={2}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5451[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5452[0m Computing cryptoHash for bucket [bucketKey={level=[3], bucketNumber=[14]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={2}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5453[0m Appending crypto-hash for child bucket = [level=[4], bucketNumber=[68]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5454[0m Propagating crypto-hash of single child node for bucket = [level=[3], bucketNumber=[14]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5455[0m cryptoHash for bucket [bucketKey={level=[3], bucketNumber=[14]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={2}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 5456[0m Computing parent bucket number for bucketNumber [14]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5457[0m bucketNode in tree-delta [bucketKey={level=[3], bucketNumber=[41]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5458[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5459[0m Computing cryptoHash for bucket [bucketKey={level=[3], bucketNumber=[41]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 545a[0m Appending crypto-hash for child bucket = [level=[4], bucketNumber=[204]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 545b[0m Propagating crypto-hash of single child node for bucket = [level=[3], bucketNumber=[41]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 545c[0m cryptoHash for bucket [bucketKey={level=[3], bucketNumber=[41]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 545d[0m Computing parent bucket number for bucketNumber [41]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 545e[0m bucketNode in tree-delta [bucketKey={level=[3], bucketNumber=[27]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 545f[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5460[0m Computing cryptoHash for bucket [bucketKey={level=[3], bucketNumber=[27]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5461[0m Appending crypto-hash for child bucket = [level=[4], bucketNumber=[131]]
+ERR - [36m19:00:48.210 [buckettree] computeCryptoHash -> DEBU 5462[0m Propagating crypto-hash of single child node for bucket = [level=[3], bucketNumber=[27]]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5463[0m cryptoHash for bucket [bucketKey={level=[3], bucketNumber=[27]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.210 [buckettree] computeParentBucketNumber -> DEBU 5464[0m Computing parent bucket number for bucketNumber [27]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5465[0m Bucket tree delta. Number of buckets at level [2] are [3]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5466[0m bucketNode in tree-delta [bucketKey={level=[2], bucketNumber=[3]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.210 [buckettree] processBucketTreeDelta -> DEBU 5467[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5468[0m Computing cryptoHash for bucket [bucketKey={level=[2], bucketNumber=[3]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5469[0m Appending crypto-hash for child bucket = [level=[3], bucketNumber=[14]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 546a[0m Propagating crypto-hash of single child node for bucket = [level=[2], bucketNumber=[3]]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 546b[0m cryptoHash for bucket [bucketKey={level=[2], bucketNumber=[3]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={3}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.211 [buckettree] computeParentBucketNumber -> DEBU 546c[0m Computing parent bucket number for bucketNumber [3]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 546d[0m bucketNode in tree-delta [bucketKey={level=[2], bucketNumber=[9]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 546e[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 546f[0m Computing cryptoHash for bucket [bucketKey={level=[2], bucketNumber=[9]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5470[0m Appending crypto-hash for child bucket = [level=[3], bucketNumber=[41]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5471[0m Propagating crypto-hash of single child node for bucket = [level=[2], bucketNumber=[9]]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5472[0m cryptoHash for bucket [bucketKey={level=[2], bucketNumber=[9]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b]
+ERR - [36m19:00:48.211 [buckettree] computeParentBucketNumber -> DEBU 5473[0m Computing parent bucket number for bucketNumber [9]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5474[0m bucketNode in tree-delta [bucketKey={level=[2], bucketNumber=[6]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5475[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5476[0m Computing cryptoHash for bucket [bucketKey={level=[2], bucketNumber=[6]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5477[0m Appending crypto-hash for child bucket = [level=[3], bucketNumber=[27]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5478[0m Propagating crypto-hash of single child node for bucket = [level=[2], bucketNumber=[6]]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5479[0m cryptoHash for bucket [bucketKey={level=[2], bucketNumber=[6]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={1}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - ] is [33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842]
+ERR - [36m19:00:48.211 [buckettree] computeParentBucketNumber -> DEBU 547a[0m Computing parent bucket number for bucketNumber [6]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 547b[0m Bucket tree delta. Number of buckets at level [1] are [2]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 547c[0m bucketNode in tree-delta [bucketKey={level=[1], bucketNumber=[1]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={2}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 547d[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 547e[0m Computing cryptoHash for bucket [bucketKey={level=[1], bucketNumber=[1]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={2}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 547f[0m Appending crypto-hash for child bucket = [level=[2], bucketNumber=[3]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5480[0m Propagating crypto-hash of single child node for bucket = [level=[1], bucketNumber=[1]]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5481[0m cryptoHash for bucket [bucketKey={level=[1], bucketNumber=[1]}
+ERR -  NumChildren={1}
+ERR - Childern crypto-hashes:
+ERR - childNumber={2}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - ] is [3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b]
+ERR - [36m19:00:48.211 [buckettree] computeParentBucketNumber -> DEBU 5482[0m Computing parent bucket number for bucketNumber [1]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5483[0m bucketNode in tree-delta [bucketKey={level=[1], bucketNumber=[2]}
+ERR -  NumChildren={2}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5484[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5485[0m Computing cryptoHash for bucket [bucketKey={level=[1], bucketNumber=[2]}
+ERR -  NumChildren={2}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5486[0m Appending crypto-hash for child bucket = [level=[2], bucketNumber=[6]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5487[0m Appending crypto-hash for child bucket = [level=[2], bucketNumber=[9]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5488[0m Computing crypto-hash for bucket [level=[1], bucketNumber=[2]] by merging [2] children
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 5489[0m cryptoHash for bucket [bucketKey={level=[1], bucketNumber=[2]}
+ERR -  NumChildren={2}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={33d6400c353d4a51e2bd51a9238c1b77ece837fda5a5ea45825dcb85aedb6d24a9d5ef52b6bbb732451f37e4147e0c2b15e49dbc82e7ebfc9ecd613305525842}
+ERR - childNumber={3}, cryptoHash={8adb0bbae7fdd7da6d4ac7297d3fb041274476a2ea06482ebb889755ca9d8cc37f9c0f3650916c5ee2940e63569eb4dd689499a1fb8eb040cc5022ef89e1864b}
+ERR - ] is [5e85b07cb278594125d63d19143ad40e07b0a9b4a59f80f73239b1f14d5119ae654eba0a79db23354838c27878c27986b6f4279983674ae4bbe9f2a68e6296e6]
+ERR - [36m19:00:48.211 [buckettree] computeParentBucketNumber -> DEBU 548a[0m Computing parent bucket number for bucketNumber [2]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 548b[0m Bucket tree delta. Number of buckets at level [0] are [1]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 548c[0m bucketNode in tree-delta [bucketKey={level=[0], bucketNumber=[1]}
+ERR -  NumChildren={2}
+ERR - Childern crypto-hashes:
+ERR - childNumber={0}, cryptoHash={3e2827a392aebe78f5909b5dde8acaa22c8642738baf625d9aa557bcbac8814a5dfb431f34526c596ebcf3970c3f3a3f8ebd79ac0d7e4275cc79f105f21d6c8b}
+ERR - childNumber={1}, cryptoHash={5e85b07cb278594125d63d19143ad40e07b0a9b4a59f80f73239b1f14d5119ae654eba0a79db23354838c27878c27986b6f4279983674ae4bbe9f2a68e6296e6}
+ERR - ]
+ERR - [36m19:00:48.211 [buckettree] processBucketTreeDelta -> DEBU 548d[0m bucket node from db [<nil>]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 548e[0m Appending crypto-hash for child bucket = [level=[1], bucketNumber=[1]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 548f[0m Appending crypto-hash for child bucket = [level=[1], bucketNumber=[2]]
+ERR - [36m19:00:48.211 [buckettree] computeCryptoHash -> DEBU 5490[0m Computing crypto-hash for bucket [level=[0], bucketNumber=[1]] by merging [2] children
+ERR - [36m19:00:48.211 [state] GetHash -> DEBU 5491[0m Exit - GetHash()
+ERR - [36m19:00:48.211 [consensus/obcpbft] ProcessEvent -> DEBU 5492[0m Replica 0 batch main thread looping
+ERR - [36m19:00:48.211 [consensus/executor] ProcessEvent -> DEBU 5493[0m Executor is processing an commitEvent
+ERR - [36m19:00:48.211 [state] GetHash -> DEBU 5494[0m Enter - GetHash()
+ERR - [36m19:00:48.211 [buckettree] ComputeCryptoHash -> DEBU 5495[0m Enter - ComputeCryptoHash()
+ERR - [36m19:00:48.211 [buckettree] ComputeCryptoHash -> DEBU 5496[0m Returing existing crypto-hash as recomputation not required
+ERR - [36m19:00:48.211 [state] GetHash -> DEBU 5497[0m Exit - GetHash()
+ERR - [36m19:00:48.235 [indexes] addIndexDataForPersistence -> DEBU 5498[0m Indexing block number [1] by hash = [4f226321cb76bc44bfb3abfda94bf63f7eb6b9b1d6c87b78c2b80d4779c5b0b3491331f305258109357ef910a1c80467370540e6366d639e49601f38b1eed60a]
+ERR - [36m19:00:48.235 [state] AddChangesForPersistence -> DEBU 5499[0m state.addChangesForPersistence()...start
+ERR - [36m19:00:48.235 [buckettree] getAffectedBuckets -> DEBU 549a[0m Adding changed bucket [level=[9], bucketNumber=[636706]]
+ERR - [36m19:00:48.235 [buckettree] getAffectedBuckets -> DEBU 549b[0m Adding changed bucket [level=[9], bucketNumber=[409175]]
+ERR - [36m19:00:48.235 [buckettree] getAffectedBuckets -> DEBU 549c[0m Adding changed bucket [level=[9], bucketNumber=[210584]]
+ERR - [36m19:00:48.235 [buckettree] getAffectedBuckets -> DEBU 549d[0m Changed buckets are = [[level=[9], bucketNumber=[636706] level=[9], bucketNumber=[409175] level=[9], bucketNumber=[210584]]]
+ERR - [36m19:00:48.235 [buckettree] addDataNodeChangesForPersistence -> DEBU 549e[0m Adding data node with value = []byte{0x31, 0x32, 0x33, 0x34, 0x35}
+ERR - [36m19:00:48.235 [buckettree] addDataNodeChangesForPersistence -> DEBU 549f[0m Adding data node with value = []byte{0x6e, 0x75, 0x6c, 0x6c}
+ERR - [36m19:00:48.235 [buckettree] addDataNodeChangesForPersistence -> DEBU 54a0[0m Adding data node with value = []byte{0x7b, 0x22, 0x6f, 0x70, 0x65, 0x6e, 0x5f, 0x74, 0x72, 0x61, 0x64, 0x65, 0x73, 0x22, 0x3a, 0x6e, 0x75, 0x6c, 0x6c, 0x7d}
+ERR - [36m19:00:48.235 [state] AddChangesForPersistence -> DEBU 54a1[0m Adding state-delta corresponding to block number[1]
+ERR - [36m19:00:48.235 [state] AddChangesForPersistence -> DEBU 54a2[0m Not deleting previous state-delta. Block number [1] is smaller than historyStateDeltaSize [500]
+ERR - [36m19:00:48.235 [state] AddChangesForPersistence -> DEBU 54a3[0m state.addChangesForPersistence()...finished
+ERR - [36m19:00:48.239 [ledger] resetForNextTxGroup -> DEBU 54a4[0m resetting ledger state for next transaction batch
+ERR - [36m19:00:48.239 [buckettree] ClearWorkingSet -> DEBU 54a5[0m Enter - ClearWorkingSet()
+ERR - [36m19:00:48.246 [consensus/handler] CommitTxBatch -> DEBU 54a6[0m Committed block with 1 transactions, intended to include 1
+ERR - [36m19:00:48.282 [consensus/executor] ProcessEvent -> DEBU 54a7[0m Committed block 1 with hash 4f226321cb76bc44bfb3abfda94bf63f7eb6b9b1d6c87b78c2b80d4779c5b0b3491331f305258109357ef910a1c80467370540e6366d639e49601f38b1eed60a to chain
+ERR - [36m19:00:48.282 [consensus/obcpbft] ProcessEvent -> DEBU 54a8[0m Replica 0 batch main thread looping
+ERR - [36m19:00:48.282 [consensus/obcpbft] ProcessEvent -> DEBU 54a9[0m Replica 0 received committedEvent
+ERR - [36m19:00:48.282 [consensus/obcpbft] ProcessEvent -> DEBU 54aa[0m Replica 0 batch main thread looping
+ERR - [36m19:00:48.282 [consensus/obcpbft] ProcessEvent -> DEBU 54ab[0m Replica 0 processing event
+ERR - 19:00:48.282 [consensus/obcpbft] execDoneSync -> INFO 54ac[0m Replica 0 finished execution 1, trying next
+ERR - [36m19:00:48.282 [consensus/obcpbft] executeOutstanding -> DEBU 54ad[0m Replica 0 attempting to executeOutstanding
+ERR - [36m19:00:48.282 [consensus/obcpbft] executeOutstanding -> DEBU 54ae[0m Replica 0 certstore map[{v:0 n:1}:0xc8202aa000]
+ERR - [36m19:00:48.282 [consensus/obcpbft] processNewView -> DEBU 54af[0m Replica 0 ignoring processNewView as it could not find view 0 in its newViewStore
+ERR - [36m19:00:48.282 [consensus/obcpbft] startTimerIfOutstandingRequests -> DEBU 54b0[0m Replica 0 not starting timer because all outstanding requests are pending
+ERR - 19:00:51.733 [peer] ensureConnected -> INFO 54b1[0m Touch service indicates no dropped connections
+ERR - [36m19:00:51.733 [peer] ensureConnected -> DEBU 54b2[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:51.733 [peer] ensureConnected -> DEBU 54b3[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - 19:00:57.733 [peer] ensureConnected -> INFO 54b4[0m Touch service indicates no dropped connections
+ERR - [36m19:00:57.733 [peer] ensureConnected -> DEBU 54b5[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:00:57.733 [peer] ensureConnected -> DEBU 54b6[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:01.973 [consensus/handler] HandleMessage -> DEBU 54b7[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:01.973 [peer] HandleMessage -> DEBU 54b8[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:01:01.973 [peer] beforeGetPeers -> DEBU 54b9[0m Sending back DISC_PEERS
+ERR - [36m19:01:01.973 [peer] SendMessage -> DEBU 54ba[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:01:02.025 [peer] SendMessage -> DEBU 54bb[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:01:02.025 [consensus/handler] HandleMessage -> DEBU 54bc[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:02.026 [peer] HandleMessage -> DEBU 54bd[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:01:02.026 [peer] beforePeers -> DEBU 54be[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:01:02.026 [peer] beforePeers -> DEBU 54bf[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - 19:01:03.733 [peer] ensureConnected -> INFO 54c0[0m Touch service indicates no dropped connections
+ERR - [36m19:01:03.733 [peer] ensureConnected -> DEBU 54c1[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:03.733 [peer] ensureConnected -> DEBU 54c2[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:05.530 [peer] SendMessage -> DEBU 54c3[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:01:05.530 [consensus/handler] HandleMessage -> DEBU 54c4[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:05.530 [peer] HandleMessage -> DEBU 54c5[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:01:05.530 [peer] beforePeers -> DEBU 54c6[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:01:05.530 [peer] beforePeers -> DEBU 54c7[0m Received PeersMessage with Peers: peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" >
+ERR - [36m19:01:05.571 [consensus/handler] HandleMessage -> DEBU 54c8[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:05.571 [peer] HandleMessage -> DEBU 54c9[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:01:05.571 [peer] beforeGetPeers -> DEBU 54ca[0m Sending back DISC_PEERS
+ERR - [36m19:01:05.571 [peer] SendMessage -> DEBU 54cb[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:01:06.281 [peer] SendMessage -> DEBU 54cc[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:01:06.281 [consensus/handler] HandleMessage -> DEBU 54cd[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:06.281 [peer] HandleMessage -> DEBU 54ce[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:01:06.281 [peer] beforePeers -> DEBU 54cf[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:01:06.281 [peer] beforePeers -> DEBU 54d0[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - [36m19:01:06.446 [consensus/handler] HandleMessage -> DEBU 54d1[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:06.446 [peer] HandleMessage -> DEBU 54d2[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:01:06.446 [peer] beforeGetPeers -> DEBU 54d3[0m Sending back DISC_PEERS
+ERR - [36m19:01:06.446 [peer] SendMessage -> DEBU 54d4[0m Sending message to stream of type: DISC_PEERS
+ERR - 19:01:09.733 [peer] ensureConnected -> INFO 54d5[0m Touch service indicates no dropped connections
+ERR - [36m19:01:09.733 [peer] ensureConnected -> DEBU 54d6[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:09.733 [peer] ensureConnected -> DEBU 54d7[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - 19:01:15.733 [peer] ensureConnected -> INFO 54d8[0m Touch service indicates no dropped connections
+ERR - [36m19:01:15.733 [peer] ensureConnected -> DEBU 54d9[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:15.733 [peer] ensureConnected -> DEBU 54da[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - 19:01:21.733 [peer] ensureConnected -> INFO 54db[0m Touch service indicates no dropped connections
+ERR - [36m19:01:21.733 [peer] ensureConnected -> DEBU 54dc[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:21.733 [peer] ensureConnected -> DEBU 54dd[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - 19:01:27.733 [peer] ensureConnected -> INFO 54de[0m Touch service indicates no dropped connections
+ERR - [36m19:01:27.733 [peer] ensureConnected -> DEBU 54df[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:27.733 [peer] ensureConnected -> DEBU 54e0[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:31.973 [consensus/handler] HandleMessage -> DEBU 54e1[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:31.973 [peer] HandleMessage -> DEBU 54e2[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:01:31.973 [peer] beforeGetPeers -> DEBU 54e3[0m Sending back DISC_PEERS
+ERR - [36m19:01:31.973 [peer] SendMessage -> DEBU 54e4[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:01:32.025 [peer] SendMessage -> DEBU 54e5[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:01:32.025 [consensus/handler] HandleMessage -> DEBU 54e6[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:32.025 [peer] HandleMessage -> DEBU 54e7[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:01:32.025 [peer] beforePeers -> DEBU 54e8[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:01:32.025 [peer] beforePeers -> DEBU 54e9[0m Received PeersMessage with Peers: peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" > peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" >
+ERR - 19:01:33.733 [peer] ensureConnected -> INFO 54ea[0m Touch service indicates no dropped connections
+ERR - [36m19:01:33.733 [peer] ensureConnected -> DEBU 54eb[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:33.733 [peer] ensureConnected -> DEBU 54ec[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:35.530 [peer] SendMessage -> DEBU 54ed[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:01:35.530 [consensus/handler] HandleMessage -> DEBU 54ee[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:35.530 [peer] HandleMessage -> DEBU 54ef[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:01:35.530 [peer] beforePeers -> DEBU 54f0[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:01:35.530 [peer] beforePeers -> DEBU 54f1[0m Received PeersMessage with Peers: peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" > peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp1" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"\004\205\234,KLi\247\t\332\255\365\275\202\225Z\311\353\221\237y\376!k\235\221\354Ad\332@Q" >
+ERR - [36m19:01:35.571 [consensus/handler] HandleMessage -> DEBU 54f2[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:35.572 [peer] HandleMessage -> DEBU 54f3[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:01:35.572 [peer] beforeGetPeers -> DEBU 54f4[0m Sending back DISC_PEERS
+ERR - [36m19:01:35.572 [peer] SendMessage -> DEBU 54f5[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:01:36.715 [consensus/handler] HandleMessage -> DEBU 54f6[0m Did not handle message of type DISC_GET_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:36.715 [peer] HandleMessage -> DEBU 54f7[0m Handling Message of type: DISC_GET_PEERS
+ERR - [36m19:01:36.715 [peer] beforeGetPeers -> DEBU 54f8[0m Sending back DISC_PEERS
+ERR - [36m19:01:36.715 [peer] SendMessage -> DEBU 54f9[0m Sending message to stream of type: DISC_PEERS
+ERR - [36m19:01:36.761 [peer] SendMessage -> DEBU 54fa[0m Sending message to stream of type: DISC_GET_PEERS
+ERR - [36m19:01:36.762 [consensus/handler] HandleMessage -> DEBU 54fb[0m Did not handle message of type DISC_PEERS, passing on to next MessageHandler
+ERR - [36m19:01:36.762 [peer] HandleMessage -> DEBU 54fc[0m Handling Message of type: DISC_PEERS
+ERR - [36m19:01:36.762 [peer] beforePeers -> DEBU 54fd[0m Received DISC_PEERS, grabbing peers message
+ERR - [36m19:01:36.762 [peer] beforePeers -> DEBU 54fe[0m Received PeersMessage with Peers: peers:<ID:<name:"vp3" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"k}\363\\Qz\314\215J.\032\227b\222\327\203\010\225Wf;\264T;\375\n\202F\022M\342\256" > peers:<ID:<name:"vp0" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp0.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"0#J\332a!\320\341\357\324M\217y\007\222\021\332\276\330i\341\331\322b\372\232\231\366\275\305E\001" > peers:<ID:<name:"vp2" > address:"a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303" type:VALIDATOR pkiID:"[gs^\201VJ\235\243~R\035y}\001\232\232\345\372\201J~\214K9\231W\323B|Cz" >
+ERR - 19:01:39.733 [peer] ensureConnected -> INFO 54ff[0m Touch service indicates no dropped connections
+ERR - [36m19:01:39.733 [peer] ensureConnected -> DEBU 5500[0m Connected to: [a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303]
+ERR - [36m19:01:39.733 [peer] ensureConnected -> DEBU 5501[0m Discovery knows about: [a5c090fe-550a-4904-8979-c71505efc6c6_vp3.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp1.us.blockchain.ibm.com:30303 a5c090fe-550a-4904-8979-c71505efc6c6_vp2.us.blockchain.ibm.com:30303]
